@@ -5,23 +5,8 @@ function Navbar() {
     const currentPage = useLocation().pathname;
 
     return (
-        // <>
-        //     <a href='../../' className='cursor-pointer'>Home</a>
-        //     <a href='' className='cursor-pointer'>About Me</a>
-        //     <a href='' className='cursor-pointer'>Transcriptions A-Z</a>
-        //     <a href='' className='cursor-pointer'>By Tuning</a>
-        //     <a href='' className='cursor-pointer'>Contact Me</a>
-        // </>
-        <div className="flex">
-            <nav className="nav-item">
-                <Link
-                    to="/"
-                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-                >
-                    Home
-                </Link>
-            </nav>
-            <nav className="nav-item">
+        <div className="flex items-center">
+            <nav className="nav-item p-5">
                 <Link
                     to="/AboutMe"
                     className={currentPage === '/AboutMe' ? 'nav-link active' : 'nav-link'}
@@ -29,7 +14,7 @@ function Navbar() {
                     About Me
                 </Link>
             </nav>
-            <nav className="nav-item">
+            <nav className="nav-item p-5">
                 <Link
                     to="/TranscriptionsAz"
                     className={currentPage === '/TranscriptionsAz' ? 'nav-link active' : 'nav-link'}
@@ -37,7 +22,7 @@ function Navbar() {
                     Transcriptions A-Z
                 </Link>
             </nav>
-            <nav className="nav-item">
+            <nav className="nav-item p-5">
                 <Link
                     to="/ByTuning"
                     className={currentPage === '/ByTuning' ? 'nav-link active' : 'nav-link'}
@@ -45,7 +30,7 @@ function Navbar() {
                     By Tuning
                 </Link>
             </nav>
-            <nav className="nav-item">
+            <nav className="nav-item p-5 mr-3">
                 <Link
                     to="/Contact"
                     className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
