@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div>Footer</div>
+        <div className='bg-black text-white'>Footer</div>
     )
 }
 
