@@ -1,8 +1,18 @@
 import './Home.css';
+import aniPic from '../../assets/photos/anipic.png'
 
 function Home() {
     return (
-        <div>Home</div>
+        <>
+            <img src={aniPic} />
+            <section>
+                <p className='font-mono mx-40 my-10 text-center text-4xl text-black'>This is a collection of Ani Difranco transcriptions.  This is a collection of Ani Difranco transcriptions.  This is a collection of Ani Difranco transcriptions.
+                    This is a collection of Ani Difranco transcriptions.  This is a collection of Ani Difranco transcriptions.  This is a collection of Ani Difranco transcriptions.  This is a collection of Ani Difranco transcriptions.
+                </p>
+            </section>
+
+        </>
+
     )
 }
 

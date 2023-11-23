@@ -2,7 +2,9 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div className='bg-black text-white'>Footer</div>
+        <div className='flex justify-center bg-black text-white h-40'>
+            <h2 className='m-10 text-5xl'>Footer</h2>
+        </div>
     )
 }
 

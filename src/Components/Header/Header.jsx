@@ -1,9 +1,8 @@
 import './Header.css';
 import Navbar from '../Navbar/Navbar';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
-    const currentPage = useLocation().pathname;
     return (
         <>
             <nav className="flex text-white bg-black justify-center width-100%">
