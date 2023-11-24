@@ -1,20 +1,4 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    background-color: red;
-  }
-  .form {
-      margin: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 40%;
-      
-    }
-    
-    .formInput, 
-    #messageBody{
+.input {
       background-color: rgb(186, 185, 185);
       padding-left: 2px;
       margin-top: 5px;
@@ -22,12 +6,8 @@
       border-radius: 5px;
       border: solid 1px black;
     }
-  
-    #messageBody {
-      height: 5em;
-    }
-  
-    .submit-button {
+
+.submit-button {
       display: flex;
       justify-content: flex-start;
       background-color: black;
@@ -37,4 +17,3 @@
       justify-content: center;
       border-radius: 5px;
     }
-  

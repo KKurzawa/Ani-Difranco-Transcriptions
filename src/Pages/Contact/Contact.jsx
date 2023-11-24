@@ -1,106 +1,92 @@
-import './Contact.css';
 import { useState } from 'react';
-import { validateEmail } from '../../Utils/Helpers';
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { validateEmail } from '../../Utils/Helpers';
+import './Contact.css';
 
-function Contact() {
+const Contact = () => {
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    const form = useRef();
-
-    const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
-
-        if (inputType === 'name') {
-            setName(inputValue);
-        } else if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'subject') {
-            setSubject(inputValue);
-        } else {
-            setMessage(inputValue);
-        }
-    };
-
-    const handleFormSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         if (!validateEmail(email)) {
-            setErrorMessage('Email is invalid');
+            setErrorMessage('Please Enter A Valid Email');
             return;
         }
 
-        alert(`Thank you for your submission ${name}!`);
+        const serviceId = 'service_7z3rq0t';
+        const templateId = 'template_cq7z9hc';
+        const publicKey = 'B2PCc5s-Jybuu2Tck';
 
-        emailjs.sendForm('service_7z3rq0t', 'template_cq7z9hc', form.current, 'B2PCc5s-Jybuu2Tck')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        const templateParams = {
+            from_name: name,
+            subject: subject,
+            message: message,
+        };
 
-        setName('');
-        setEmail('');
-        setSubject('');
-        setMessage('');
-    };
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+            .then((response) => {
+                console.log('Email sent successfully!', response);
+                alert(`Thank you for your email ${name}!  I will get back to you soon!`);
+                setName('');
+                setEmail('');
+                setSubject('');
+                setMessage('');
+            })
+            .catch((error) => {
+                console.error('Error:', error)
+            })
+        console.log(templateParams);
+    }
     return (
-        <>
-            <section className="container">
-                <h2 className="text-black text-4xl mt-5">Contact Me</h2>
-                <form ref={form} className="form" onSubmit={handleFormSubmit}>
-                    <input
-                        className='formInput'
-                        value={name}
-                        name="name"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="Name"
-                    />
-                    <input
-                        className='formInput'
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder="Email"
-                    />
-                    <input
-                        className='formInput'
-                        id='subjectBody'
-                        value={subject}
-                        name="subject"
-                        onChange={handleInputChange}
-                        type="subject"
-                        placeholder="Subject"
-                    />
-                    <textarea
-                        className='messageBody'
-                        id='messageBody'
-                        value={message}
-                        name="message"
-                        onChange={handleInputChange}
-                        type="submit"
-                        placeholder="Message"
-                    />
-                    <button className="submit-button" type="submit">Submit</button>
-                </form>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-            </section>
-        </>
+        <div className='flex flex-col items-center'>
+            <h2 className="text-black text-4xl mt-5">Contact Me</h2>
+            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[40%]'>
+                <input
+                    className='input'
+                    type='text'
+                    placeholder='Your Name'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                    className='input'
+                    type='email'
+                    placeholder='Your Email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    className='input'
+                    type='subject'
+                    placeholder='Subject'
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                />
+                <textarea
+                    className='input'
+                    cols='30'
+                    rows='10'
+                    placeholder='Message'
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                >
+                </textarea>
+                <button className='submit-button' type='submit'>Submit</button>
+            </form>
+            {errorMessage && (
+                <div>
+                    <p className="error-text text-black text-4xl mb-5">{errorMessage}</p>
+                </div>
+            )}
+        </div>
 
     )
 }
 
-export default Contact
+export default Contact;
