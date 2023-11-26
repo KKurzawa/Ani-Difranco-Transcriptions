@@ -4,6 +4,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const navlinks = [
     {
+        title: 'Home',
+        link: '/',
+    },
+    {
         title: 'About Me',
         link: '/AboutMe',
     },
@@ -33,7 +37,7 @@ function Navbar() {
         <>
             <div className='flex'>
                 <div className='hidden md:flex lg:flex md:text-base lg:text-2xl items-center md:ml-10 lg:ml-40'>
-                    {navlinks.map((link, index) => (
+                    {navlinks.map((link, index) => index > 0 && (
                         <a key={index} className='md:p-3 lg:p-5' href={link.link}>
                             {link.title}
                         </a>

@@ -8,6 +8,7 @@ import Error from './Pages/Error/Error.jsx';
 import TranscriptionsAz from './Pages/TranscriptionsAz/TranscriptionsaAz.jsx';
 import ByTuning from './Pages/ByTuning/ByTuning.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
+import SingleTranscription from './Pages/SingleTranscription/SingleTranscription.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         path: '/Contact',
         element: <Contact />,
       },
+      {
+        path: '/SingleTranscription',
+        element: <SingleTranscription />,
+      }
     ],
   },
 ]);
