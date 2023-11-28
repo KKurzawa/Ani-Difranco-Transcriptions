@@ -1,7 +1,9 @@
 import './ByTuning.css';
-import { getTranscriptions } from '../../Utils/TranscriptionsTunings';
+import { getTranscriptions, getTranscriptions2 } from '../../Utils/TranscriptionsTunings';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
+
 
 function ByTuning() {
     const [transcriptions, setTranscriptions] = useState([]);
@@ -16,8 +18,33 @@ function ByTuning() {
         fetchData();
     }, []);
 
+    const [transcriptions2, setTranscriptions2] = useState([]);
+
+    const fetchData2 = async () => {
+        const transcriptions2 = await getTranscriptions2();
+        setTranscriptions2(transcriptions2);
+        // console.log(transcriptions.tuning)
+    }
+
+    useEffect(() => {
+        fetchData2();
+    }, []);
+
+
+
     return (
         <section>
+            {transcriptions2.map((transcription2) => (
+                <div key={transcription2.id}>
+                    {transcription2.tuningPattern}
+                </div>
+            ))}
+            {transcriptions2.map((transcription2) => (
+                <div key={transcription2.id}>
+                    {Object.values(transcription2).forEach(val => console.log(val))}
+                </div>
+            ))}
+            {/* original approach */}
             <h2 className='text-4xl md:text-6xl p-5 text-center'>By Tuning</h2>
             <div className='md:hidden flex flex-col'>
                 <h2 className='tuningPattern'>Tuning Pattern: x55545</h2>
@@ -25,7 +52,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'EADGBE' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='w-10px'
                         >
@@ -37,7 +64,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'DGCFAD' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='w-10px'
                         >
@@ -50,7 +77,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'EADGBD' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='link'
                         >
@@ -63,7 +90,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'DADGAE' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='link'
                         >
@@ -76,7 +103,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'FADGAC' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='link'
                         >
@@ -89,7 +116,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'DADGAC' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='link'
                         >
@@ -102,7 +129,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'CGCGCD' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='link'
                         >
@@ -115,7 +142,7 @@ function ByTuning() {
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'CADGCC' && (
                         <Link
-                            to='/SingleTranscription'
+                            to={`/SingleTranscription/${transcription.id}`}
                             key={transcription.id}
                             className='link'
                         >

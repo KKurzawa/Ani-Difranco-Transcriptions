@@ -1,4 +1,4 @@
-const transcriptions = [
+export const transcriptions = [
     {
         id: 1,
         name: '32 Flavors',
@@ -73,4 +73,46 @@ const transcriptions = [
 
 export function getTranscriptions() {
     return transcriptions;
+}
+
+
+
+const transcriptions2 = [
+    {
+        id: 1,
+        tuningPattern: 'x55543',
+        tunings: {
+            tuning1: 'EADGBD',
+            songs: {
+                song1: 'song1',
+                song2: 'song2',
+
+            },
+            tuning2: 'DGCFAC',
+            songs: {
+                song1: 'song1',
+                song2: 'song2',
+            },
+        },
+
+    },
+    {
+        id: 2,
+        tuningPattern: 'x75527',
+        tunings: {
+            one: 'DADGAE',
+        }
+    },
+    {
+        id: 3,
+        tuningPattern: 'x55545',
+        tunings: {
+            one: 'EADGBE',
+            two: 'DGCFAD',
+        },
+    }
+]
+
+export function getTranscriptions2() {
+    return transcriptions2;
 }

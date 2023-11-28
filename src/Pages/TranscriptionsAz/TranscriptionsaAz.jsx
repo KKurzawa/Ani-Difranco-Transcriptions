@@ -1,34 +1,43 @@
 import './TranscriptionsAz.css';
-import { getTranscriptions } from '../../Utils/TranscriptionsTunings';
+import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 function TranscriptionsaAz() {
 
-    const [transcriptions, setTranscriptions] = useState([]);
+    // const [transcriptions, setTranscriptions] = useState([]);
 
-    const fetchData = async () => {
-        const transcriptions = await getTranscriptions();
-        setTranscriptions(transcriptions);
-        // console.log(transcriptions.tuning)
-    }
+    // const fetchData = async () => {
+    //     const transcriptions = await getTranscriptions();
+    //     setTranscriptions(transcriptions);
+    //     // const data = (transcriptions);
+    //     // console.log(data)
+    // }
 
-    useEffect(() => {
-        fetchData();
-    }, []);
+    // useEffect(() => {
+    //     fetchData();
+    // }, []);
+
+    // if (!id) {
+    //     id = "id";
+    // }
+
+
 
     return (
         <section className='flex flex-col'>
-            <h2 className='text-4xl md:text-6xl p-5 text-center'>Transcriptions</h2>
+            <h2 className='text-4xl md:text-6xl p-5 text-center'>Transcriptions A-Z</h2>
             <div className='md:hidden flex flex-col pb-5'>
                 {transcriptions.map((transcription) => (
                     <div key={transcription.id} className='p-2 flex flex-col items-center'>
                         <Link
-                            to='/SingleTranscription'
                             key={transcription.id}
+                            to={`/SingleTranscription/${transcription.id}`}
+
                         >
                             <div key={transcription.id}>
-                                <h3 className='text-3xl'>{transcription.name}</h3>
+                                <h2 className='text-3xl'>{transcription.name}</h2>
                             </div>
                         </Link>
                         <div>
@@ -46,7 +55,7 @@ function TranscriptionsaAz() {
                     {transcriptions.map((transcription, index) => index % 2 === 0 && (
                         <div key={transcription.id} className='p-2 flex flex-col items-center'>
                             <Link
-                                to='/SingleTranscription'
+                                to={`/SingleTranscription/${transcription.id}`}
                                 key={transcription.id}
                             >
                                 <div key={transcription.id}>
@@ -65,7 +74,7 @@ function TranscriptionsaAz() {
                     {transcriptions.map((transcription, index) => index % 2 === 1 && (
                         <div key={transcription.id} className='p-2 flex flex-col items-center'>
                             <Link
-                                to='/SingleTranscription'
+                                to={`/SingleTranscription/${transcription.id}`}
                                 key={transcription.id}
                             >
                                 <div key={transcription.id}>

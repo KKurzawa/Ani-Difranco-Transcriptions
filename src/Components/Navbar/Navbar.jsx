@@ -12,7 +12,7 @@ const navlinks = [
         link: '/AboutMe',
     },
     {
-        title: 'Transcriptions A-Z',
+        title: 'A-Z',
         link: '/TranscriptionsAz',
     },
     {
@@ -36,9 +36,9 @@ function Navbar() {
     return (
         <>
             <div className='flex'>
-                <div className='hidden md:flex lg:flex md:text-base lg:text-2xl items-center md:ml-10 lg:ml-40'>
+                <div className='hidden md:flex lg:flex md:text-base lg:text-xl items-center md:ml-10 lg:ml-40'>
                     {navlinks.map((link, index) => index > 0 && (
-                        <a key={index} className='md:p-3 lg:p-5' href={link.link}>
+                        <a key={index} className='md:p-3 lg:p-5 text-center' href={link.link}>
                             {link.title}
                         </a>
                     ))}

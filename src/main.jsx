@@ -10,6 +10,7 @@ import ByTuning from './Pages/ByTuning/ByTuning.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
 import SingleTranscription from './Pages/SingleTranscription/SingleTranscription.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: '/SingleTranscription',
+        path: '/SingleTranscription/:id',
         element: <SingleTranscription />,
       }
     ],
