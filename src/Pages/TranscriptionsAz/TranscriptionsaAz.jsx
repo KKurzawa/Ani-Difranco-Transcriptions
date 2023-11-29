@@ -1,25 +1,37 @@
 import './TranscriptionsAz.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
 
 
 function TranscriptionsaAz() {
 
+    // let pdf = transcriptions.pdf;
+    // console.log(pdf);
+
+    // const [transcriptionsData, setTranscriptionsData] = useState([]);
+
+
+
+    // const onButtonClick = () => {
+    //     const pdfUrl = transcriptionsData.pdf;
+    //     const link = document.createElement("a");
+    //     link.href = pdfUrl;
+    //     link.download = transcriptionsData.pdf;
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    //     console.log(transcriptionsData.pdf)
+    //     setTranscriptionsData('');
+    // };
     return (
         <section className='flex flex-col'>
-            <h2 className='text-4xl md:text-6xl p-5 text-center'>Transcriptions A-Z</h2>
+            <h2 className='text-4xl md:text-6xl pt-5 text-center'>Transcriptions A-Z</h2>
+            <h2 className='text-2xl md:text-3xl pb-5 text-center'>Click Song to View PDF</h2>
             <div className='md:hidden flex flex-col pb-5'>
                 {transcriptions.map((transcription) => (
                     <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                        <Link
-                            key={transcription.id}
-                            to={`/SingleTranscription/${transcription.id}`}
-
-                        >
-                            <div key={transcription.id}>
-                                <h2 className='text-3xl'>{transcription.name}</h2>
-                            </div>
-                        </Link>
+                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="text-3xl">{transcription.name}</a>
                         <div>
                             <a href='./ByTuning'>
                                 <h2>Tuning: {transcription.tuning}</h2>
@@ -32,14 +44,7 @@ function TranscriptionsaAz() {
                 <div className=''>
                     {transcriptions.map((transcription, index) => index % 2 === 0 && (
                         <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                            >
-                                <div key={transcription.id}>
-                                    <h3 className='text-5xl'>{transcription.name}</h3>
-                                </div>
-                            </Link>
+                            <a href={transcription.pdf} target="_blank" rel="noreferrer" className="text-5xl">{transcription.name}</a>
                             <div>
                                 <a href='./ByTuning'>
                                     <h2>Tuning: {transcription.tuning}</h2>
@@ -51,14 +56,7 @@ function TranscriptionsaAz() {
                 <div>
                     {transcriptions.map((transcription, index) => index % 2 === 1 && (
                         <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                            >
-                                <div key={transcription.id}>
-                                    <h3 className='text-5xl'>{transcription.name}</h3>
-                                </div>
-                            </Link>
+                            <a href={transcription.pdf} target="_blank" rel="noreferrer" className="text-5xl">{transcription.name}</a>
                             <div>
                                 <a href='./ByTuning'>
                                     <h2>Tuning: {transcription.tuning}</h2>

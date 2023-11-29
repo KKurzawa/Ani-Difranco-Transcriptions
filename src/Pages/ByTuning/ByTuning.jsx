@@ -1,7 +1,7 @@
 import './ByTuning.css';
 import { getTranscriptions } from '../../Utils/TranscriptionsTunings';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 
@@ -20,109 +20,62 @@ function ByTuning() {
     return (
         <section>
             {/* original approach mobile view*/}
-            <h2 className='text-4xl md:text-6xl p-5 text-center'>By Tuning</h2>
+            <h2 className='text-4xl md:text-6xl pt-5 text-center'>By Tuning</h2>
+            <h2 className='text-2xl md:text-3xl pb-5 text-center'>Click Song to View PDF</h2>
             <div className='md:hidden flex flex-col'>
                 <h2 className='tuningPattern'>Tuning Pattern: x55545</h2>
-                <h2 className='tuning'>Tuning: EADGBE</h2>
+                <h2 id='EADGBE' className='tuning'>Tuning: EADGBE</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'EADGBE' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='w-10px'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
-                <h2 className='tuning'>Tuning: DGCFAD</h2>
+                <h2 id='DGCFAD' className='tuning'>Tuning: DGCFAD</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'DGCFAD' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='w-10px'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
                 <h2 className='tuningPattern'>Tuning Pattern: x55543</h2>
-                <h2 className='tuning'>Tuning: EADGBD</h2>
+                <h2 id='EADGBD' className='tuning'>Tuning: EADGBD</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'EADGBD' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='link'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
                 <h2 className='tuningPattern'>Tuning Pattern: x75527</h2>
-                <h2 className='tuning'>Tuning: DADGAE</h2>
+                <h2 id='DADGAE' className='tuning'>Tuning: DADGAE</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'DADGAE' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='link'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
                 <h2 className='tuningPattern'>Tuning Pattern: x45523</h2>
-                <h2 className='tuning'>Tuning: FADGAC</h2>
+                <h2 id='FADGAC' className='tuning'>Tuning: FADGAC</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'FADGAC' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='link'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
                 <h2 className='tuningPattern'>Tuning Pattern: x75523</h2>
-                <h2 className='tuning'>Tuning: DADGAC</h2>
+                <h2 id='DADGAC' className='tuning'>Tuning: DADGAC</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'DADGAC' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='link'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
                 <h2 className='tuningPattern'>Tuning Pattern: x75752</h2>
-                <h2 className='tuning'>Tuning: CGCGCD</h2>
+                <h2 id='CGCGCD' className='tuning'>Tuning: CGCGCD</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'CGCGCD' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='link'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
                 <h2 className='tuningPattern'>Tuning Pattern: x95550</h2>
-                <h2 className='tuning'>Tuning: CADGCC</h2>
+                <h2 id='CADGCC' className='tuning'>Tuning: CADGCC</h2>
                 <div className='map'>
                     {transcriptions.map((transcription) => transcription.tuning === 'CADGCC' && (
-                        <Link
-                            to={`/SingleTranscription/${transcription.id}`}
-                            key={transcription.id}
-                            className='link'
-                        >
-                            <div className='name' key={transcription.id}>{transcription.name}</div>
-                        </Link>
+                        <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                     ))}
                 </div>
             </div>
@@ -133,51 +86,27 @@ function ByTuning() {
                     <h2 className='tuning'>Tuning: EADGBE</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'EADGBE' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='w-10px'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
                     <h2 className='tuning'>Tuning: DGCFAD</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'DGCFAD' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='w-10px'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
                     <h2 className='tuningPattern'>Tuning Pattern: x45523</h2>
                     <h2 className='tuning'>Tuning: FADGAC</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'FADGAC' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='link'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
                     <h2 className='tuningPattern'>Tuning Pattern: x75523</h2>
                     <h2 className='tuning'>Tuning: DADGAC</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'DADGAC' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='link'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
 
@@ -187,26 +116,14 @@ function ByTuning() {
                     <h2 className='tuning'>Tuning: EADGBD</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'EADGBD' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='link'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
                     <h2 className='tuningPattern'>Tuning Pattern: x75527</h2>
                     <h2 className='tuning'>Tuning: DADGAE</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'DADGAE' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='link'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
 
                     </div>
@@ -214,26 +131,14 @@ function ByTuning() {
                     <h2 className='tuning'>Tuning: CGCGCD</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'CGCGCD' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='link'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
                     <h2 className='tuningPattern'>Tuning Pattern: x95550</h2>
                     <h2 className='tuning'>Tuning: CADGCC</h2>
                     <div className='map'>
                         {transcriptions.map((transcription) => transcription.tuning === 'CADGCC' && (
-                            <Link
-                                to={`/SingleTranscription/${transcription.id}`}
-                                key={transcription.id}
-                                className='link'
-                            >
-                                <div className='name' key={transcription.id}>{transcription.name}</div>
-                            </Link>
+                            <a key={transcription.id} href={transcription.pdf} target="_blank" rel="noreferrer" className="name">{transcription.name}</a>
                         ))}
                     </div>
                 </div>

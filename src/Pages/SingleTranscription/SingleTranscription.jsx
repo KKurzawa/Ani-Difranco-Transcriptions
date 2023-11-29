@@ -1,7 +1,7 @@
 import './SingleTranscription.css';
 import { useParams } from 'react-router-dom';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
-// import Animal from '../../assets/PlaceholderTranscriptions/Animal.pdf';
+import Animal from '../../assets/PlaceholderTranscriptions/Animal.pdf';
 import { PDFViewer } from '@react-pdf/renderer';
 import aniPic from '../../assets/photos/anipic.png'
 // import { useEffect, useState } from 'react';
@@ -24,7 +24,7 @@ function SingleTranscription() {
         <>
             <div className='flex flex-col text-4xl md:text-6xl p-5 '>
                 <h1 className='text-center'>{transcription.name}</h1>
-                <img src="/32Flavors.png" className='w-75% border-2 border-black' />
+                <img src={transcription.pdf} className='w-75% border-2 border-black' />
                 <div className='flex flex-start'>
                     <button className="flex-start" onClick={onButtonClick}>Download PDF</button>
                 </div>
@@ -32,9 +32,9 @@ function SingleTranscription() {
 
             </div>
 
-            {/* <PDFViewer>
-                {Animal}
-            </PDFViewer> */}
+            <PDFViewer>
+                {'/32Flavors.pdf'}
+            </PDFViewer>
 
 
         </>

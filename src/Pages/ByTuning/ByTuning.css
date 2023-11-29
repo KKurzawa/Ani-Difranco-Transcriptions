@@ -24,11 +24,14 @@
     padding-bottom: 1.25rem/* 20px */;
 }
 
-.link {
-    width: 10px;
-}
 
 .name {
     font-size: 1.25rem/* 20px */;
     line-height: 1.75rem/* 28px */;
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
 }
+
