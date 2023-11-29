@@ -1,29 +1,9 @@
 import './TranscriptionsAz.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
 function TranscriptionsaAz() {
-
-    // const [transcriptions, setTranscriptions] = useState([]);
-
-    // const fetchData = async () => {
-    //     const transcriptions = await getTranscriptions();
-    //     setTranscriptions(transcriptions);
-    //     // const data = (transcriptions);
-    //     // console.log(data)
-    // }
-
-    // useEffect(() => {
-    //     fetchData();
-    // }, []);
-
-    // if (!id) {
-    //     id = "id";
-    // }
-
-
 
     return (
         <section className='flex flex-col'>

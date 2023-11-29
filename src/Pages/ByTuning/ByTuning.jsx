@@ -1,5 +1,5 @@
 import './ByTuning.css';
-import { getTranscriptions, getTranscriptions2 } from '../../Utils/TranscriptionsTunings';
+import { getTranscriptions } from '../../Utils/TranscriptionsTunings';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,6 @@ function ByTuning() {
     const fetchData = async () => {
         const transcriptions = await getTranscriptions();
         setTranscriptions(transcriptions);
-        // console.log(transcriptions.tuning)
     }
 
     useEffect(() => {
