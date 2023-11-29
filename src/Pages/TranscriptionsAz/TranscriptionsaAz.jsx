@@ -46,8 +46,6 @@ function TranscriptionsaAz() {
                             </a>
                         </div>
                     </div>
-
-
                 ))}
             </div>
             <div className='hidden md:flex justify-evenly pb-5'>
