@@ -36,7 +36,7 @@ function Navbar() {
     return (
         <>
             <div className='flex justify-center'>
-                <div className='flex md:text-base lg:text-xl md:items-center md:ml-10 lg:ml-40'>
+                <div className='flex pb-2 md:pb-0 md:text-base lg:text-xl md:items-center md:ml-10 lg:ml-40'>
                     {navlinks.map((link, index) => index > 0 && (
                         <a key={index} className='px-5 md:p-3 lg:p-5 text-center' href={link.link}>
                             {link.title}

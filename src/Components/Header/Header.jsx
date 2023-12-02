@@ -11,8 +11,8 @@ function Header() {
                         to="/"
                         className=''
                     >
-                        <h1 className='text-5xl mt-6'>ANI DIFRANCO</h1>
-                        <h2 className='text-3xl mb-6'>TRANSCRIPTIONS</h2>
+                        <h1 className='text-5xl mt-4 md:mt-6'>ANI DIFRANCO</h1>
+                        <h2 className='text-3xl mb-2 md:mb-6'>TRANSCRIPTIONS</h2>
                     </Link>
                 </header>
                 <Navbar />
