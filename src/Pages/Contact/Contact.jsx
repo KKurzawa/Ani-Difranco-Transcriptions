@@ -46,7 +46,7 @@ const Contact = () => {
     return (
         <div className='flex flex-col items-center'>
             <h2 className="text-black text-4xl md:text-6xl mt-5">Contact Me</h2>
-            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[40%]'>
+            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
                     className='input'
                     type='text'
@@ -71,7 +71,7 @@ const Contact = () => {
                 <textarea
                     className='input'
                     cols='30'
-                    rows='10'
+                    rows='5'
                     placeholder='Message'
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
