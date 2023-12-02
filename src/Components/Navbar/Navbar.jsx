@@ -35,15 +35,15 @@ function Navbar() {
 
     return (
         <>
-            <div className='flex'>
-                <div className='hidden md:flex lg:flex md:text-base lg:text-xl items-center md:ml-10 lg:ml-40'>
+            <div className='flex justify-center'>
+                <div className='flex md:text-base lg:text-xl md:items-center md:ml-10 lg:ml-40'>
                     {navlinks.map((link, index) => index > 0 && (
-                        <a key={index} className='md:p-3 lg:p-5 text-center' href={link.link}>
+                        <a key={index} className='px-5 md:p-3 lg:p-5 text-center' href={link.link}>
                             {link.title}
                         </a>
                     ))}
                 </div>
-                <div className='ml-10'>
+                {/* <div className='ml-10'>
                     <div className='flex md:hidden'>
                         <button type='button' onClick={handleMenu} className='
                         rounded-md text-white '>
@@ -54,7 +54,7 @@ function Navbar() {
                     </div>
 
                     {open ? (
-                        <div className='md:hidden'>
+                        <div className='h-full mt-10 md:hidden'>
                             <div className='ox-2 pt-2 pb-3 space-y-1 sm:px-3'>
                                 {navlinks.map((link, index) => (
                                     <a
@@ -67,9 +67,9 @@ function Navbar() {
                                 ))}
                             </div>
                         </div>
-                    ) : null}
+                    ) : null} */}
 
-                </div>
+                {/* </div> */}
 
             </div >
             {/* Old Code */}
