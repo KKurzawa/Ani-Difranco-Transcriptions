@@ -11,7 +11,7 @@ function Footer() {
                 <a href='https://www.instagram.com/natshapednat/' target="_blank" rel="noreferrer"><FaInstagram className='text-6xl md:mr-60 lg:mr-80' /></a>
             </div>
             <div>
-                <a href='https://immense-everglades-74554-f9bad473782a.herokuapp.com/' target="_blank" rel="noreferrer"><h4 className='flex justify-end items-end mt-1 mr-2 mb-1 text-[.6rem] md:text-[.75rem]'>Site Designed and Built By Kris Kurzawa</h4></a>
+                <a href='https://immense-everglades-74554-f9bad473782a.herokuapp.com/' target="_blank" rel="noreferrer"><h4 className='flex justify-end items-end mt-2 md:mt-1 mr-2 mb-1 text-[.6rem] md:text-[.75rem]'>Site Designed and Built By Kris Kurzawa</h4></a>
             </div>
         </footer>
 
