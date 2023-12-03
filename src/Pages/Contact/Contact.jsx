@@ -37,6 +37,7 @@ const Contact = () => {
                 setEmail('');
                 setSubject('');
                 setMessage('');
+                setErrorMessage('');
             })
             .catch((error) => {
                 console.error('Error:', error)
