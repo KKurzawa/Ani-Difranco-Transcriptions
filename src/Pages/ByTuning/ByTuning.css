@@ -35,3 +35,9 @@
     
 }
 
+@media screen and (max-width: 640px) {
+    .name{
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}

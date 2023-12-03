@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className='bg-black text-white h-32 flex flex-col'>
+        <footer className='footer2 bg-black text-white h-32 flex flex-col'>
             <div className='footer flex justify-around items-center '>
                 <a href='https://www.facebook.com/natalie.siagkrisseymour.1' target="_blank" rel="noreferrer"><FaFacebook className='text-6xl md:ml-60 lg:ml-80' /></a>
                 <a href='https://anidifranco.com/' target="_blank" rel="noreferrer"><img className='w-28 -rotate-1' src='./footerLogo.png'></img></a>
