@@ -46,26 +46,26 @@ const Contact = () => {
     }
     return (
         <div className='flex flex-col items-center -mb-32 md:mb-0 min-h-screen'>
-            <h2 className="text-black text-4xl md:text-6xl mt-5">Contact Me</h2>
+            <h2 className="text-black text-4xl md:text-6xl mt-5">contact me</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
                     className='input'
                     type='text'
-                    placeholder='Your Name'
+                    placeholder='your name'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 <input
                     className='input'
                     type='email'
-                    placeholder='Your Email'
+                    placeholder='your email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                     className='input'
                     type='subject'
-                    placeholder='Subject'
+                    placeholder='subject'
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                 />
@@ -73,12 +73,12 @@ const Contact = () => {
                     className='input'
                     cols='30'
                     rows='5'
-                    placeholder='Message'
+                    placeholder='message'
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button' type='submit'>Submit</button>
+                <button className='submit-button' type='submit'>submit</button>
             </form>
             {errorMessage && (
                 <div>

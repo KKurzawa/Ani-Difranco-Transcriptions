@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import './index.css'
 import Home from './Pages/Home/Home.jsx';
-import AboutMe from './Pages/AboutMe/AboutMe.jsx';
+import About from './Pages/About/About.jsx';
 import Error from './Pages/Error/Error.jsx';
 import TranscriptionsAz from './Pages/TranscriptionsAz/TranscriptionsaAz.jsx';
 import ByTuning from './Pages/ByTuning/ByTuning.jsx';
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/AboutMe',
-        element: <AboutMe />
+        path: '/About',
+        element: <About />
       },
       {
         path: '/TranscriptionsAz',
