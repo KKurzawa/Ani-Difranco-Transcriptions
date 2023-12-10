@@ -11,6 +11,8 @@ function ByTuning() {
         (transctiption) => transctiption.tuningPattern
     )
 
+    tuningPatterns.sort(function (a, b) { return a - b });
+
     let uniqueTuningPatterns = [];
 
     for (let i = 0; i < tuningPatterns.length; i++) {

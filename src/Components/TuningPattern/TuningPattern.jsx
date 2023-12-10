@@ -6,6 +6,9 @@ export default function TuningPattern({ myTuningPattern, items }) {
     let tunings = items.map(
         (item) => item.tuning
     )
+
+    tunings.sort();
+
     console.log('TuningPatternsItems', items)
     let uniqueTunings = [];
     for (let i = 0; i < tunings.length; i++) {
@@ -24,7 +27,7 @@ export default function TuningPattern({ myTuningPattern, items }) {
     )
     return (
         <div className="flex-col pb-5">
-            <h2 className="text-2xl md:text-4xl pb-1 md:pb-2 underline underline-offset-8">tuning pattern: {myTuningPattern}</h2>
+            <h2 className="text-2xl md:text-4xl pb-1 md:pb-2 underline underline-offset-8">tuning pattern: x{myTuningPattern}</h2>
             {tuningComponents}
         </div>
     )
