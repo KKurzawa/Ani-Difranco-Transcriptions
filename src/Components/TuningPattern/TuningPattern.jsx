@@ -27,7 +27,7 @@ export default function TuningPattern({ myTuningPattern, items }) {
     )
     return (
         <div className="flex-col pb-5">
-            <h2 className="text-2xl md:text-4xl pb-1 md:pb-2 underline underline-offset-8">tuning pattern: x{myTuningPattern}</h2>
+            <h2 className="description-text text-2xl md:text-4xl pb-1 md:pb-2 font-bold underline underline-offset-8">tuning pattern: x{myTuningPattern}</h2>
             {tuningComponents}
         </div>
     )

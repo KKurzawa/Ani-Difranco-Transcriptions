@@ -31,8 +31,8 @@ function ByTuning() {
     )
     return (
         <div className='flex flex-col justify-center'>
-            <h2 className='text-4xl md:text-6xl pt-5 text-center'>by tuning</h2>
-            <h2 className='text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
+            <h2 className='heading-text text-4xl md:text-6xl pt-5 text-center'>by tuning</h2>
+            <h2 className='heading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
             <div className='md:hidden flex-col text-center'>
                 {tuningPatternComponents}
             </div>

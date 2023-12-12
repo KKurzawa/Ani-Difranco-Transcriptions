@@ -9,8 +9,8 @@ export default function Tuning({ myTuning, items }) {
     console.log(items);
     return (
         <>
-            <h2 className='text-2xl italic'>tuning: {myTuning}</h2>
-            <div className='flex flex-col'>{songsComponents}</div>
+            <h2 className='description-text text-2xl font-bold italic'>tuning: {myTuning}</h2>
+            <div className='description-text font-bold flex flex-col'>{songsComponents}</div>
         </>
     )
 }

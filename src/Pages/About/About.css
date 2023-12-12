@@ -1,0 +1,30 @@
+.about-description-text{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-bottom: .5em;
+    text-indent: 1em;
+}
+
+.about-header-text{
+    font-family: 'EB Garamond', serif;
+    padding-bottom: .5em;
+    font-size: 2em;
+    padding-top: .5em;
+}
+
+.about-sub-header-text{
+    font-family: 'EB Garamond', serif;
+    padding-bottom: .25em;
+    font-size: 1.5em;
+}
+
+#introduction{
+    padding-bottom: .25em;
+}
+
+#nat-name,
+#this-way,
+#therefore{
+    text-indent: 0;
+}
+
+

@@ -5,6 +5,7 @@
       margin-bottom: 5px;
       border-radius: 5px;
       border: solid 1px black;
+      font-family: 'Nanum Gothic', sans-serif;
     }
 
 .submit-button {
@@ -19,4 +20,5 @@
       align-items: center;
       margin-top: .25rem;
       margin-bottom: 2rem;
+      font-family: 'Nanum Gothic', sans-serif;
     }

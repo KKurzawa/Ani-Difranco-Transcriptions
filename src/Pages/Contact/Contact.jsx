@@ -46,7 +46,7 @@ const Contact = () => {
     }
     return (
         <div className='flex flex-col items-center -mb-32 md:mb-0 min-h-screen'>
-            <h2 className="text-black text-4xl md:text-6xl mt-5">contact me</h2>
+            <h2 className="heading-text text-black text-4xl md:text-6xl mt-5">contact me</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
                     className='input'

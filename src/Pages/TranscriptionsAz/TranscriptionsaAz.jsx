@@ -5,15 +5,15 @@ function TranscriptionsaAz() {
 
     return (
         <section className='flex flex-col'>
-            <h2 className='text-4xl md:text-6xl pt-5 text-center'>transcriptions a-z</h2>
-            <h2 className='text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
+            <h2 className='heading-text text-4xl md:text-6xl pt-5 text-center'>transcriptions a-z</h2>
+            <h2 className='heading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
             <div className='md:hidden flex flex-col pb-5'>
                 {transcriptions.map((transcription) => (
                     <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="text-3xl">{transcription.name}</a>
+                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="description-text text-3xl">{transcription.name}</a>
                         <div>
                             <a href='./ByTuning'>
-                                <h2 className='text-xl'>tuning: {transcription.tuning}</h2>
+                                <h2 className='description-text text-xl'>tuning: {transcription.tuning}</h2>
                             </a>
                         </div>
                     </div>
