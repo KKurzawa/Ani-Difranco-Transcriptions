@@ -3,6 +3,8 @@ import natPic from '../../assets/photos/natpic.jpg'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
 
 function AboutMe() {
+    // const backslash = &amp#92;
+
     return (
         <>
             <div className='flex justify-center'>
