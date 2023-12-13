@@ -4,14 +4,14 @@
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 5px;
-      border: solid 1px #190e0c;
+      border: solid 1px #1d110e;
       font-family: 'Nanum Gothic', sans-serif;
     }
 
 .submit-button {
       display: flex;
       justify-content: flex-start;
-      background-color: #190e0c;
+      background-color: #1d110e;
       color:white;
       width: 5rem;
       height: 2rem;
