@@ -45,7 +45,7 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <div className='flex flex-col items-center -mb-32 md:mb-0 min-h-screen bg-[#B4A48B]'>
+        <div className='flex flex-col items-center -mb-32 md:mb-0 min-h-screen bg-[#c2b39c]'>
             <h2 className="heading-text text-white text-4xl md:text-6xl mt-5">contact me</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input

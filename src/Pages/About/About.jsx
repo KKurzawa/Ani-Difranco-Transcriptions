@@ -7,7 +7,7 @@ function AboutMe() {
     // const backslash = &amp#92;
 
     return (
-        <div className='bg-[#B4A48B]'>
+        <div className='bg-[#c2b39c]'>
             <div className='flex justify-center'>
                 <img src={NatPic2} />
             </div>
