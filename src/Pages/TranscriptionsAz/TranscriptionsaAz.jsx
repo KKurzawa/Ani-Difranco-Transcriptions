@@ -10,10 +10,10 @@ function TranscriptionsaAz() {
             <div className='md:hidden flex flex-col pb-5'>
                 {transcriptions.map((transcription) => (
                     <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="description-text text-3xl">{transcription.name}</a>
+                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="description-text text-xl md:text-2xl text-black">{transcription.name}</a>
                         <div>
                             <a href='./ByTuning'>
-                                <h2 className='description-text text-xl'>tuning: {transcription.tuning}</h2>
+                                <h2 className='description-text'>tuning: {transcription.tuning}</h2>
                             </a>
                         </div>
                     </div>
@@ -23,10 +23,10 @@ function TranscriptionsaAz() {
                 <div className=''>
                     {transcriptions.map((transcription) => (
                         <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                            <a href={transcription.pdf} target="_blank" rel="noreferrer" className="text-4xl">{transcription.name}</a>
+                            <a href={transcription.pdf} target="_blank" rel="noreferrer" className="text-xl md:text-3xl text-black'">{transcription.name}</a>
                             <div>
                                 <a href='./ByTuning'>
-                                    <h2 className='text-2xl'>tuning: {transcription.tuning}</h2>
+                                    <h2>tuning: {transcription.tuning}</h2>
                                 </a>
                             </div>
                         </div>

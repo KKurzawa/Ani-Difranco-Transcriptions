@@ -26,7 +26,7 @@ function DynamicsTable() {
                     <td className='about-table-text text-center'>slide up</td>
                 </tr>
                 <tr>
-                    <td className='backslash'>{`\\`}</td>
+                    <td className='backslash text-2xl font-thin'>{`\\`}</td>
                     <td className='about-table-text text-center'>slide down</td>
                 </tr>
                 <tr>
