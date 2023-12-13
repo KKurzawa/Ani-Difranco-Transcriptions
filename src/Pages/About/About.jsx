@@ -1,5 +1,5 @@
 import './About.css';
-import natPic from '../../assets/photos/natpic.jpg'
+// import natPic from '../../assets/photos/natpic.jpg'
 import NatPic2 from '../../assets/photos/NatPic2.jpg'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
 
@@ -11,7 +11,7 @@ function AboutMe() {
             <div className='flex justify-center'>
                 <img src={NatPic2} />
             </div>
-            <p className='my-10 mx-7 md:mx-10 text-xl md:text-2xl text-black'>
+            <p className='my-10 mx-7 md:mx-10 text-xl md:text-2xl text-white'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
 

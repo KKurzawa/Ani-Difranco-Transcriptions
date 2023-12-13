@@ -1,5 +1,5 @@
 import './Home.css';
-import aniPic from '../../assets/photos/anipic.png'
+// import aniPic from '../../assets/photos/anipic.png'
 import AniPic2 from '../../assets/photos/AniPic2.png'
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
         <>
             <img className='w-full' src={AniPic2} />
             <section>
-                <p className='description-text mx-10 md:mx-40 my-10 text-center text-2xl md:text-4xl text-black'>the ultimate unauthorized fan-made and researched collection of the unique musical compositions of ani difranco
+                <p className='description-text mx-10 md:mx-40 my-10 text-center text-2xl md:text-4xl text-white'>the ultimate unauthorized fan-made and researched collection of the unique musical compositions of ani difranco
                 </p>
             </section>
 
