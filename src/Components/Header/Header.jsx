@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <>
-            <nav className="flex flex-col md:flex-row text-white bg-black justify-center width-100%">
+            <nav className="flex flex-col md:flex-row text-white bg-[#B4A48B] justify-center width-100%">
                 <header className='width-100% flex justify-center text-center'>
                     <Link
                         to="/"
