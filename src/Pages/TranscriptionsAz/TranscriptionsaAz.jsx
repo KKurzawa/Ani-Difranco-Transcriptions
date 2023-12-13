@@ -4,7 +4,7 @@ import { transcriptions } from '../../Utils/TranscriptionsTunings';
 function TranscriptionsaAz() {
 
     return (
-        <section className='flex flex-col text-white'>
+        <section className='flex flex-col bg-[#B4A48B] text-white'>
             <h2 className='heading-text text-4xl md:text-6xl pt-5 text-center'>transcriptions a-z</h2>
             <h2 className='heading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
             <div className='md:hidden flex flex-col pb-5'>

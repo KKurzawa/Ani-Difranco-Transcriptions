@@ -7,11 +7,11 @@ function AboutMe() {
     // const backslash = &amp#92;
 
     return (
-        <>
+        <div className='bg-[#B4A48B]'>
             <div className='flex justify-center'>
                 <img src={NatPic2} />
             </div>
-            <p className='my-10 mx-7 md:mx-10 text-xl md:text-2xl text-white'>
+            <p className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl text-white'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
 
@@ -109,7 +109,7 @@ function AboutMe() {
                     this is a completely unauthorized fan-made publication. these transcriptions are the author's own work and represent my interpretation of the songs. you may only use these files for private study, scholarship, or research. copyrighted material contained in transcriptions is used in accordance with 'fair use'.
                 </div>
             </p>
-        </>
+        </div>
 
 
     )
