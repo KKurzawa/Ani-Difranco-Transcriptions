@@ -1,4 +1,6 @@
 .heading-text{
     font-family: 'EB Garamond', serif;
     color: rgba(245, 245, 245, 0.848);
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: #412720;
 }
