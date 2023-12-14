@@ -4,13 +4,13 @@ import { transcriptions } from '../../Utils/TranscriptionsTunings';
 function TranscriptionsaAz() {
 
     return (
-        <section className='flex flex-col bg-[#c2b39c] text-white'>
-            <h2 className='heading-text text-4xl md:text-6xl pt-5 text-center'>transcriptions a-z</h2>
-            <h2 className='heading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
+        <section className='flex flex-col bg-[#c2b39c]'>
+            <h2 className='heading-text text-4xl md:text-6xl pt-5 text-center text-[#4F7942]'>transcriptions a-z</h2>
+            <h2 className='heading-text text-2xl md:text-3xl pb-5 text-center text-[#4F7942]'>click song to view pdf</h2>
             <div className='md:hidden flex flex-col pb-5'>
                 {transcriptions.map((transcription) => (
                     <div key={transcription.id} className='p-2 flex flex-col items-center'>
-                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="description-text text-xl md:text-2xl text-white">{transcription.name}</a>
+                        <a href={transcription.pdf} target="_blank" rel="noreferrer" className="description-text text-xl md:text-2xl #412720">{transcription.name}</a>
                         <div>
                             <a href='./ByTuning'>
                                 <h2 className='description-text'>tuning: {transcription.tuning}</h2>

@@ -11,7 +11,7 @@ function AboutMe() {
             <div className='flex justify-center'>
                 <img src={NatPic2} />
             </div>
-            <p className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl text-white'>
+            <p className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
 
