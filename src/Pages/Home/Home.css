@@ -1,3 +1,5 @@
 .description-text{
     font-family: 'Nanum Gothic', sans-serif;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #412720;
 }
