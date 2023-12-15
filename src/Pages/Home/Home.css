@@ -1,5 +1,7 @@
-.description-text{
-    font-family: 'Nanum Gothic', sans-serif;
-    -webkit-text-stroke-width: .25px;
-    -webkit-text-stroke-color: #412720;
+.home-description-text{
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5em;
+    color: #412720;
+    -webkit-text-stroke-wdth: .25px;
+    -webkit-text-stroke-color: #4F7942;
 }
