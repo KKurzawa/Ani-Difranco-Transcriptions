@@ -20,6 +20,12 @@
     color: #412720;
 }
 
+.quote{
+    font-family: 'EB Garamond', serif;
+    padding-bottom: .25em;
+    font-size: 1.5em;
+    color: #4F7942;;
+}
 
 #NatPic3 {
     filter: sepia(70%);

@@ -99,10 +99,10 @@ function AboutMe() {
                 <div className='about-description-text mb-10'>
                     this project would not exist without the contribution of many members of the rbr community, and online ani forums. my thanks to the original authors and site admins of anitabs.net, as well as the transcription team at jonimitchell.com, and to bubba, sulli, andy braxton, lee houck, keith foster, greg goldstein, franco apple, keyvious avery, ronnie robinson, and the members of the ani difranco fan forum. i also wish to extend my gratitude to kris kurzawa, a legendary guitarist in his own right, who has created and developed this site for me. finally, my endless, endless, heaping thanks to ani difranco herself, whose music has been a friend, puzzle, inspiration, challenge, and tremendous gift to me and countless others for years.
                 </div>
-                <div className='about-sub-header-text'>
+                <div className='quote'>
                     “i do it for the joy it brings
                 </div>
-                <div className='about-sub-header-text mb-10'>
+                <div className='quote mb-10'>
                     because I’m a joyful girl”
                 </div>
                 <div className='about-description-text'>

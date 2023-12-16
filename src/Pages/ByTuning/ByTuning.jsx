@@ -31,6 +31,7 @@ function ByTuning() {
             return <TuningPattern key={uniqueTuningPattern} myTuningPattern={uniqueTuningPattern} items={itemsWithTuningPattern} />
         }
     )
+    console.log('tuningPatternComponents', tuningPatternComponents);
     return (
         <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c]'>
             <img className='AniPic5 w-full' src={AniPic5} />
