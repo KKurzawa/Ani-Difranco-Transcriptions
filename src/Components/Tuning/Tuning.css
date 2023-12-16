@@ -1,3 +1,9 @@
-.description-text{
-    font-family: 'Nanum Gothic', sans-serif;
+.tuning-subheading-text {
+    font-family: 'Playfair', serif;
+    color: #412720;
+}
+
+.tuning-song-text {
+    font-family: 'Playfair', serif;
+    color: #412720;
 }

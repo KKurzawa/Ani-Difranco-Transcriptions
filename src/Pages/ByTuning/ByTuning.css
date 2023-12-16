@@ -1,3 +1,16 @@
+.by-heading-text{
+    font-family: 'EB Garamond', serif;
+    font-size: 2em;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    color: #4F7942;
+}
+
+.by-subheading-text {
+    font-family: 'Playfair', serif;
+    padding-bottom: .5em;
+    color: #412720;
+}
 .tuningPattern {
     font-size: 1.875rem/* 30px */;
     line-height: 2.25rem/* 36px */;
@@ -33,6 +46,10 @@
     margin-left: 10rem;
     margin-right: 10rem;
     
+}
+
+.AniPic5{
+    filter:sepia(55%)
 }
 
 @media screen and (max-width: 640px) {

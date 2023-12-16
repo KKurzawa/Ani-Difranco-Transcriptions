@@ -1,6 +1,8 @@
 import './ByTuning.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import TuningPattern from '../../Components/TuningPattern/TuningPattern';
+import AniPic5 from '../../assets/photos/AniPic5.png';
+// import AniPic5 from '../../assets/photos/AniPic5.PNG;
 // import { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
 
@@ -30,15 +32,22 @@ function ByTuning() {
         }
     )
     return (
-        <div className='flex flex-col justify-center text-white bg-[#c2b39c]'>
-            <h2 className='heading-text text-4xl md:text-6xl pt-5 text-center'>by tuning</h2>
-            <h2 className='heading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
+        <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c]'>
+            <img className='AniPic5 w-full' src={AniPic5} />
+            <h2 className='by-heading-text text-2xl md:text-10xl mt-10 text-center'>by tuning</h2>
+            <h2 className='by-subheading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
             <div className='md:hidden flex-col text-center'>
                 {tuningPatternComponents}
             </div>
-            <div className='hidden md:flex flex-col text-center'>
-                {tuningPatternComponents}
+            <div className='flex flex-row justify-around'>
+                <div className='hidden md:flex flex-col text-center pb-10'>
+                    {tuningPatternComponents}
+                </div>
+                <div className='hidden md:flex flex-col text-center pb-10'>
+                    {tuningPatternComponents}
+                </div>
             </div>
+
 
         </div>
     )

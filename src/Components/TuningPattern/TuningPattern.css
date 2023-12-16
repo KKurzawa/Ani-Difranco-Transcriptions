@@ -1,3 +1,11 @@
 .description-text{
     font-family: 'Nanum Gothic', sans-serif;
 }
+
+.tuning-pattern-text{
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5em;
+        padding-top: .5em;
+        color: #4F7942;
+    }
+   
