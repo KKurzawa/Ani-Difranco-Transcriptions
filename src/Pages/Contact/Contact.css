@@ -1,18 +1,23 @@
+#NatPic {
+  filter:sepia(55%)
+}
+
 .input {
-      background-color: white;
+      background-color: #1d110e;
       padding-left: 2px;
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 5px;
       border: solid 1px #1d110e;
       font-family: 'Nanum Gothic', sans-serif;
+      color: #c2b39c;
     }
 
 .submit-button {
       display: flex;
       justify-content: flex-start;
       background-color: #1d110e;
-      color:white;
+      color:#c2b39c;
       width: 5rem;
       height: 2rem;
       justify-content: center;

@@ -1,6 +1,6 @@
 import './About.css';
 // import natPic from '../../assets/photos/natpic.jpg'
-import NatPic from '../../assets/photos/NatPic.png'
+import NatPic3 from '../../assets/photos/NatPic3.png'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
 
 function AboutMe() {
@@ -9,7 +9,7 @@ function AboutMe() {
     return (
         <div className='bg-[#c2b39c]'>
             <div className='flex justify-center'>
-                <img id='NatPic' src={NatPic} />
+                <img id='NatPic3' src={NatPic3} />
             </div>
             <p className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>

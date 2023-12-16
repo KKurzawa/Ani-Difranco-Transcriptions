@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { validateEmail } from '../../Utils/Helpers';
+import NatPic from '../../assets/photos/NatPic.png'
 import './Contact.css';
 
 const Contact = () => {
@@ -46,7 +47,8 @@ const Contact = () => {
     }
     return (
         <div className='flex flex-col items-center -mb-32 md:mb-0 min-h-screen bg-[#c2b39c]'>
-            <h2 className="heading-text text-white text-4xl md:text-6xl mt-5">contact me</h2>
+            <img id='NatPic' src={NatPic} />
+            <h2 className="heading-text text-[#4F7942] text-4xl md:text-6xl mt-5">contact me</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
                     className='input'
