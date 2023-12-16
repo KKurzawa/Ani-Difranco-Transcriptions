@@ -1,4 +1,29 @@
-.description-text{
-    font-family: 'Nanum Gothic', sans-serif;
+.az-heading-text{
+    font-family: 'EB Garamond', serif;
+    font-size: 2em;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    color: #4F7942;
+}
+
+.az-subheading-text {
+    font-family: 'Playfair', serif;
+    padding-bottom: .5em;
     color: #412720;
+}
+
+.az-song-text{
+    font-family: 'EB Garamond', serif;
+    padding-bottom: .25em;
+    font-size: 1.5em;
+    color: #412720;
+}
+
+.az-tuning-text{
+    font-family: 'Playfair', serif;
+    color: #412720;
+}
+
+#aniPic4 {
+    filter: sepia(60%);
 }
