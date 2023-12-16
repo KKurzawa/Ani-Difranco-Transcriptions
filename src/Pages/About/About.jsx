@@ -1,6 +1,6 @@
 import './About.css';
 // import natPic from '../../assets/photos/natpic.jpg'
-import NatPic from '../../assets/photos/NatPic.jpg'
+import NatPic from '../../assets/photos/NatPic.png'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
 
 function AboutMe() {
