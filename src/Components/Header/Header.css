@@ -3,3 +3,8 @@
     -webkit-text-stroke-width: .25px;
     -webkit-text-stroke-color: #412720;
 }
+
+.heading-text:hover {     
+    color: #4F7942;
+    opacity: .8;
+}

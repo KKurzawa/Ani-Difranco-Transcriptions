@@ -7,3 +7,7 @@
     font-family: 'Playfair', serif;
     color: #412720;
 }
+
+.tuning-song-text:hover {
+    opacity: .7;
+}

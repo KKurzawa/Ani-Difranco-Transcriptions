@@ -26,10 +26,10 @@ function TranscriptionsaAz() {
                 <div className='flex flex-col items-center'>
                     {transcriptions.map((transcription, index) => index % 2 === 0 && (
                         <div key={transcription.id} className='p-2 flex justify-center flex-col lg:flex-row items-center lg:items-baseline'>
-                            <h2><a href={transcription.pdf} target="_blank" rel="noreferrer" className="az-song-text text-2xl md:text-4xl text-center lg:pr-3">{transcription.name}</a></h2>
+                            <h2><a href={transcription.pdf} target="_blank" rel="noreferrer" className="az-song-text text-2xl md:text-4xl text-center lg:pr-3 hover:opacity-80">{transcription.name}</a></h2>
                             <div className='flex items-center'>
                                 <a href='./ByTuning'>
-                                    <h2 className='az-tuning-text flex'>tuning: {transcription.tuning}</h2>
+                                    <h2 className='az-tuning-text flex hover:opacity-70'>tuning: {transcription.tuning}</h2>
                                 </a>
                             </div>
                         </div>
@@ -38,10 +38,10 @@ function TranscriptionsaAz() {
                 <div className=''>
                     {transcriptions.map((transcription, index) => index % 2 === 1 && (
                         <div key={transcription.id} className='p-2 flex justify-center flex-col lg:flex-row items-center lg:items-baseline'>
-                            <h2><a href={transcription.pdf} target="_blank" rel="noreferrer" className="az-song-text text-2xl md:text-4xl text-center lg:pr-3">{transcription.name}</a></h2>
+                            <h2><a href={transcription.pdf} target="_blank" rel="noreferrer" className="az-song-text text-2xl md:text-4xl text-center lg:pr-3 hover:opacity-80">{transcription.name}</a></h2>
                             <div className='flex'>
                                 <a href='./ByTuning'>
-                                    <h2 className='az-tuning-text flex'>tuning: {transcription.tuning}</h2>
+                                    <h2 className='az-tuning-text flex hover:opacity-70'>tuning: {transcription.tuning}</h2>
                                 </a>
                             </div>
                         </div>

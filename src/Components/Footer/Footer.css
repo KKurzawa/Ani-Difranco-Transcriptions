@@ -9,5 +9,10 @@
 
 .footer-description-text{
     font-family: 'Nanum Gothic', sans-serif;
-    color: '#c2b39c'
+    color: '#c2b39c';
+}
+
+.footer-description-text:hover {
+    color: '#c2b39c';
+    opacity: .8;
 }
