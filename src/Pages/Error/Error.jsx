@@ -2,7 +2,7 @@ import './Error.css';
 
 function Error() {
     return (
-        <div>Error</div>
+        <div className='bg-white'>Error</div>
     )
 }
 
