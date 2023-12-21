@@ -5,6 +5,7 @@ export const transcriptions = [
         tuning: 'EADGBD',
         tuningPattern: '55543',
         pdf: '/32Flavors.pdf',
+        video: 'https://www.youtube.com/watch?v=m_pMYbleHpU'
     },
     {
         id: 2,

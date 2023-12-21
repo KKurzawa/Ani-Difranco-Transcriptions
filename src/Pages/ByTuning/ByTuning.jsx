@@ -47,7 +47,6 @@ function ByTuning() {
         <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c]'>
             <img className='AniPic5 w-full' src={AniPic5} />
             <h2 className='by-heading-text text-2xl md:text-10xl mt-10 text-center'>by tuning</h2>
-            <h2 className='by-subheading-text text-2xl md:text-3xl pb-5 text-center'>click song to view pdf</h2>
             <div className='md:hidden flex flex-row justify-around text-sm'>
                 <div className='flex-col text-center pb-10'>
                     {oddTuningPatternComponents}
@@ -58,15 +57,13 @@ function ByTuning() {
 
             </div>
             <div className='flex flex-row justify-around'>
-                <div className='hidden md:flex flex-col text-center pb-10'>
+                <div className='hidden md:flex flex-col text-center'>
                     {oddTuningPatternComponents}
                 </div>
-                <div className='hidden md:flex flex-col text-center pb-10'>
+                <div className='hidden md:flex flex-col text-center'>
                     {evenTuningPatternComponents}
                 </div>
             </div>
-
-
         </div>
     )
 }

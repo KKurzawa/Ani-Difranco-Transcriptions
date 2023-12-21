@@ -3,11 +3,15 @@
     color: #412720;
 }
 
-.tuning-song-text {
+.by-song-title,
+.pdf-text,
+.video-text,
+.span-text{
     font-family: 'Playfair', serif;
     color: #412720;
 }
 
-.tuning-song-text:hover {
+.pdf-text:hover,
+.video-text:hover{
     opacity: .7;
 }
