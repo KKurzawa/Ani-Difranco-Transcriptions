@@ -6,9 +6,9 @@ export default function Tuning({ myTuning, items }) {
             <div key={item.name}>
                 <h2 className='by-song-title text-xl md:text-2xl'>{item.name}</h2>
                 <div className='-mt-1'>
-                    <a href={item.pdf} target="_blank" rel="noreferrer" className='pdf-text text-base flex-col pr-1'>PDF</a>
+                    <a href={item.pdf} target="_blank" rel="noreferrer" className='pdf-text text-base flex-col pr-1'>pdf</a>
                     <span className='span-text text-sm'>|</span>
-                    <a href={item.video} target="_blank" rel="noreferrer" className='video-text text-base flex-col pl-1'>Video</a>
+                    <a href={item.video} target="_blank" rel="noreferrer" className='video-text text-base flex-col pl-1'>video</a>
                 </div>
 
             </div>

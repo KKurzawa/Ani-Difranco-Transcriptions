@@ -8,7 +8,7 @@ function TranscriptionsaAz() {
     const sortedTranscriptions = transcriptions.sort((function (a, b) { return a - b }));
     console.log('sortedTranscriptions', sortedTranscriptions)
     return (
-        <section className='flex flex-col text-xl md:text-2xl bg-[#c2b39c]'>
+        <section className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c]'>
             <img id='aniPic4' className='w-full' src={AniPic4} />
             <h2 className='az-heading-text flex justify-center mt-5 mb-5'>transcriptions a-z</h2>
             {/* <h2 className='az-subheading-text flex justify-center'>click song to view pdf</h2> */}
@@ -36,7 +36,7 @@ function TranscriptionsaAz() {
                                     </a>
                                 </div>
                             </div>
-                            <h2 className="az-tuning-text flex justify-center hover:opacity-70"><a href={transcription.pdf} target="_blank" rel="noreferrer" className='mr-1'>PDF</a><span>|</span><a href={transcription.video} target='_blank' rel='noreferrer' className='ml-1'>Video</a></h2>
+                            <h2 className="az-tuning-text flex justify-center hover:opacity-70"><a href={transcription.pdf} target="_blank" rel="noreferrer" className='mr-1'>pdf</a><span>|</span><a href={transcription.video} target='_blank' rel='noreferrer' className='ml-1'>video</a></h2>
                         </div>
                     ))}
                 </div>
@@ -51,7 +51,7 @@ function TranscriptionsaAz() {
                                     </a>
                                 </div>
                             </div>
-                            <h2 className="az-tuning-text flex justify-center hover:opacity-70"><a href={transcription.pdf} target="_blank" rel="noreferrer" className='mr-1'>PDF</a><span>|</span><a href={transcription.video} target='_blank' rel='noreferrer' className='ml-1'>Video</a></h2>
+                            <h2 className="az-tuning-text flex justify-center hover:opacity-70"><a href={transcription.pdf} target="_blank" rel="noreferrer" className='mr-1'>pdf</a><span>|</span><a href={transcription.video} target='_blank' rel='noreferrer' className='ml-1'>video</a></h2>
                         </div>
                     ))}
                 </div>
