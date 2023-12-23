@@ -5,7 +5,7 @@ export const transcriptions = [
         tuning: 'EADGBD',
         tuningPattern: '55543',
         pdf: '/32Flavors.pdf',
-        video: 'https://www.youtube.com/watch?v=m_pMYbleHpU'
+        video: 'https://www.youtube.com/watch?v=m_pMYbleHpU',
     },
     {
         id: 2,
@@ -13,6 +13,7 @@ export const transcriptions = [
         tuning: 'DADGAE',
         tuningPattern: '75527',
         pdf: '/Animal.pdf',
+        video: false,
     },
     {
         id: 3,
@@ -20,6 +21,7 @@ export const transcriptions = [
         tuning: 'EADGBE',
         tuningPattern: '55545',
         pdf: '/BothHands.pdf',
+        video: false,
     },
     {
         id: 4,
@@ -27,6 +29,7 @@ export const transcriptions = [
         tuning: 'FADGAC',
         tuningPattern: '45523',
         pdf: '/CarelessWords.pdf',
+        video: false,
     },
     {
         id: 5,
@@ -34,6 +37,7 @@ export const transcriptions = [
         tuning: 'DADGAC',
         tuningPattern: '75523',
         pdf: '/Dithering.pdf',
+        video: false,
     },
     {
         id: 6,
@@ -41,6 +45,7 @@ export const transcriptions = [
         tuning: 'DGCFAD',
         tuningPattern: '55545',
         pdf: './Evolve.pdf',
+        video: 'https://www.youtube.com/watch?v=FicxauojdvA',
     },
     {
         id: 7,
@@ -48,6 +53,7 @@ export const transcriptions = [
         tuning: 'CGCGCD',
         tuningPattern: '75752',
         pdf: './FallingIsLikeThis.pdf',
+        video: false,
     },
     {
         id: 8,
@@ -55,6 +61,7 @@ export const transcriptions = [
         tuning: 'CADGCC',
         tuningPattern: '95550',
         pdf: './GardenOfSimple.pdf',
+        video: false,
     },
     {
         id: 9,
@@ -62,6 +69,7 @@ export const transcriptions = [
         tuning: 'EADGBE',
         tuningPattern: '55545',
         pdf: './Hearse.pdf',
+        video: 'https://www.youtube.com/watch?v=MWhNX4oO4iM',
     },
     {
         id: 10,
@@ -69,6 +77,7 @@ export const transcriptions = [
         tuning: 'EADGBE',
         tuningPattern: '55545',
         pdf: './Hurricane.pdf',
+        video: false,
     },
 ]
 
