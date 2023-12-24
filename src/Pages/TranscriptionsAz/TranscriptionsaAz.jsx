@@ -36,14 +36,21 @@ function TranscriptionsaAz() {
                                     </a>
                                 </div>
                             </div>
-                            <h2 className="az-tuning-text flex justify-center hover:opacity-70"><a href={transcription.pdf} target="_blank" rel="noreferrer" className='mr-2'>pdf</a>
+                            <h2 className="az-tuning-text flex justify-center hover:opacity-70">
+                                {transcription.pdf === false ? (
+                                    <a></a>
+                                ) : (
+                                    <a href={transcription.pdf} target="_blank" rel="noreferrer" className='text-center'>pdf</a>
+                                )}
+                                {transcription.pdf !== false && transcription.video !== false ? (
+                                    <span className='text-sm md:text-lg flex items-center mr-2 ml-2'>|</span>
+                                ) : (
+                                    <span></span>
+                                )}
                                 {transcription.video === false ? (
                                     <a></a>
                                 ) : (
-                                    <>
-                                        <span className='text-sm md:text-lg flex items-center'>|</span>
-                                        <a href={transcription.video} target='_blank' rel='noreferrer' className='ml-2'>video</a>
-                                    </>
+                                    <a href={transcription.video} target='_blank' rel='noreferrer' className='text-center'>video</a>
                                 )}
                             </h2>
                         </div>
@@ -60,14 +67,21 @@ function TranscriptionsaAz() {
                                     </a>
                                 </div>
                             </div>
-                            <h2 className="az-tuning-text flex justify-center hover:opacity-70"><a href={transcription.pdf} target="_blank" rel="noreferrer" className='mr-2'>pdf</a>
+                            <h2 className="az-tuning-text flex justify-center hover:opacity-70">
+                                {transcription.pdf === false ? (
+                                    <a></a>
+                                ) : (
+                                    <a href={transcription.pdf} target="_blank" rel="noreferrer" className='text-center'>pdf</a>
+                                )}
+                                {transcription.pdf !== false && transcription.video !== false ? (
+                                    <span className='text-sm md:text-lg flex items-center mr-2 ml-2'>|</span>
+                                ) : (
+                                    <span></span>
+                                )}
                                 {transcription.video === false ? (
                                     <a></a>
                                 ) : (
-                                    <>
-                                        <span className='text-sm md:text-lg flex items-center'>|</span>
-                                        <a href={transcription.video} target='_blank' rel='noreferrer' className='ml-2'>video</a>
-                                    </>
+                                    <a href={transcription.video} target='_blank' rel='noreferrer' className='text-center'>video</a>
                                 )}
                             </h2>
                         </div>

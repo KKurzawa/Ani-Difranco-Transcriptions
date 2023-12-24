@@ -52,8 +52,8 @@ export const transcriptions = [
         name: 'falling is like this',
         tuning: 'CGCGCD',
         tuningPattern: '75752',
-        pdf: './FallingIsLikeThis.pdf',
-        video: false,
+        pdf: false,
+        video: 'https://www.youtube.com/watch?v=OAr2Stq4Hls',
     },
     {
         id: 8,
@@ -68,7 +68,7 @@ export const transcriptions = [
         name: 'hearse',
         tuning: 'EADGBE',
         tuningPattern: '55545',
-        pdf: './Hearse.pdf',
+        pdf: false,
         video: 'https://www.youtube.com/watch?v=MWhNX4oO4iM',
     },
     {
