@@ -2,11 +2,6 @@ import './ByTuning.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import TuningPattern from '../../Components/TuningPattern/TuningPattern';
 import AniPic5 from '../../assets/photos/AniPic5.png';
-// import AniPic5 from '../../assets/photos/AniPic5.PNG;
-// import { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-
-
 
 function ByTuning() {
     let tuningPatterns = transcriptions.map(
@@ -46,21 +41,20 @@ function ByTuning() {
     return (
         <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c]'>
             <img className='AniPic5 w-full' src={AniPic5} />
-            <h2 className='by-heading-text text-2xl md:text-10xl mt-10 text-center'>by tuning</h2>
+            <h2 className='by-heading-text text-2xl md:text-10xl mt-5 mb-5 text-center'>by tuning</h2>
             <div className='md:hidden flex flex-row justify-around text-sm'>
-                <div className='flex-col text-center pb-10'>
+                <div className='flex-col text-center'>
                     {oddTuningPatternComponents}
                 </div>
-                <div className='flex-col text-center pb-10'>
+                <div className='flex-col text-center'>
                     {evenTuningPatternComponents}
                 </div>
-
             </div>
-            <div className='flex flex-row justify-around'>
-                <div className='hidden md:flex flex-col text-center'>
+            <div className='flex flex-row justify-around mb-10'>
+                <div id={oddTuningPatternComponents.tuning} className='hidden md:flex flex-col text-center'>
                     {oddTuningPatternComponents}
                 </div>
-                <div className='hidden md:flex flex-col text-center'>
+                <div id={evenTuningPatternComponents.tuning} className='hidden md:flex flex-col text-center'>
                     {evenTuningPatternComponents}
                 </div>
             </div>

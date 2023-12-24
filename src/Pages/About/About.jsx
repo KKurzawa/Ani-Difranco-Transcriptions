@@ -14,7 +14,6 @@ function AboutMe() {
             <p className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
-
                 <h4 className='about-description-text'>
                     when i first encountered the music of ani difranco, i had been playing guitar for nearly twenty years. as a long-time student and enthusiast of the music of joni mitchell, i was elated to find another artist with such a penchant for innovative and expressive tunings. though less frequently cataloged and analyzed than many of her musical peers, ani is every bit as creative and unique as the guitar greats often topping patriarchal-good-ol-boys-club best of lists; she is even more so unparalleled when one takes her right hand fingerpicking technique into consideration.
                 </h4>
