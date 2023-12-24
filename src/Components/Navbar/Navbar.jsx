@@ -15,7 +15,7 @@ const navlinks = [
     },
     {
         title: 'by tuning',
-        link: '/ByTuning/#test',
+        link: '/ByTuning',
     },
     {
         title: 'contact me',

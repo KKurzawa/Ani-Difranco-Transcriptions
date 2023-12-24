@@ -3,6 +3,12 @@ import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import TuningPattern from '../../Components/TuningPattern/TuningPattern';
 import AniPic5 from '../../assets/photos/AniPic5.png';
 
+// import AniPic5 from '../../assets/photos/AniPic5.PNG;
+// import { useEffect, useState } from 'react';
+// import { Link } from 'react-router-dom';
+
+
+
 function ByTuning() {
     let tuningPatterns = transcriptions.map(
         (transctiption) => transctiption.tuningPattern
@@ -51,10 +57,10 @@ function ByTuning() {
                 </div>
             </div>
             <div className='flex flex-row justify-around mb-10'>
-                <div id={oddTuningPatternComponents.tuning} className='hidden md:flex flex-col text-center'>
+                <div className='hidden md:flex flex-col text-center'>
                     {oddTuningPatternComponents}
                 </div>
-                <div id={evenTuningPatternComponents.tuning} className='hidden md:flex flex-col text-center'>
+                <div className='hidden md:flex flex-col text-center'>
                     {evenTuningPatternComponents}
                 </div>
             </div>

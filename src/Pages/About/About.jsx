@@ -11,7 +11,7 @@ function AboutMe() {
             <div className='flex justify-center'>
                 <img id='NatPic3' src={NatPic3} />
             </div>
-            <p className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
+            <div className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
                 <h4 className='about-description-text'>
@@ -107,7 +107,7 @@ function AboutMe() {
                 <div className='about-description-text'>
                     this is a completely unauthorized fan-made publication. these transcriptions are the author's own work and represent my interpretation of the songs. you may only use these files for private study, scholarship, or research. copyrighted material contained in transcriptions is used in accordance with 'fair use'.
                 </div>
-            </p>
+            </div>
         </div>
 
 
