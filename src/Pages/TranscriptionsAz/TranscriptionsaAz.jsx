@@ -1,6 +1,5 @@
 import './TranscriptionsAz.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
-// import AniPic3 from '../../assets/photos/AniPic3.png';
 import AniPic4 from '../../assets/photos/AniPic4.png'
 
 function TranscriptionsaAz() {
@@ -18,7 +17,7 @@ function TranscriptionsaAz() {
                             <div className=' flex justify-center flex-col lg:flex-row items-center lg:items-baseline'>
                                 <h2 className="az-song-text text-2xl md:text-4xl text-center lg:pr-3">{transcription.name}</h2>
                                 <div className='flex items-center'>
-                                    <a href='./ByTuning'>
+                                    <a href={`./ByTuning/${transcription.tuning}`}>
                                         <h2 className='az-tuning-text flex hover:opacity-70'>tuning: {transcription.tuning}</h2>
                                     </a>
                                 </div>
@@ -49,7 +48,7 @@ function TranscriptionsaAz() {
                             <div className=' flex justify-center flex-col lg:flex-row items-center lg:items-baseline'>
                                 <h2 className="az-song-text text-2xl md:text-4xl text-center lg:pr-3">{transcription.name}</h2>
                                 <div className='flex items-center'>
-                                    <a href='./ByTuning'>
+                                    <a href={`./ByTuning/${transcription.tuning}`}>
                                         <h2 className='az-tuning-text flex hover:opacity-70'>tuning: {transcription.tuning}</h2>
                                     </a>
                                 </div>

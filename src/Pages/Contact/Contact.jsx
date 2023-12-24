@@ -88,7 +88,6 @@ const Contact = () => {
                 </div>
             )}
         </div>
-
     )
 }
 

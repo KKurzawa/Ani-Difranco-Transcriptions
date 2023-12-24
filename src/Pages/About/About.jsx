@@ -1,10 +1,8 @@
 import './About.css';
-// import natPic from '../../assets/photos/natpic.jpg'
 import NatPic3 from '../../assets/photos/NatPic3.png'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
 
 function AboutMe() {
-    // const backslash = &amp#92;
 
     return (
         <div className='bg-[#c2b39c]'>
@@ -109,8 +107,6 @@ function AboutMe() {
                 </div>
             </div>
         </div>
-
-
     )
 }
 

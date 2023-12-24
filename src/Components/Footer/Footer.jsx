@@ -2,8 +2,6 @@ import './Footer.css'
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
-// import aniLogo from '../../../public/footerLogo2.png'
-
 
 function Footer() {
     return (
@@ -18,7 +16,6 @@ function Footer() {
                 <a href='https://immense-everglades-74554-f9bad473782a.herokuapp.com/' target="_blank" rel="noreferrer" className='w-64'><h4 className='footer-description-text flex justify-end items-end mr-2 pb-1 text-[.5em] md:text-[.7em]'>site designed and built by kris kurzawa</h4></a>
             </div>
         </footer>
-
     )
 }
 

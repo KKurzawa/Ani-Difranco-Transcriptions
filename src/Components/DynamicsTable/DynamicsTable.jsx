@@ -51,10 +51,8 @@ function DynamicsTable() {
                         <td className='about-table-text text-center'>no chord: tacet or rest</td>
                     </tr>
                 </tbody>
-
             </table>
         </>
-
     )
 }
 

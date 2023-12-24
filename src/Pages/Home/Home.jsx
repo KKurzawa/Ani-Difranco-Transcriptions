@@ -1,6 +1,5 @@
 import './Home.css';
-// import aniPic from '../../assets/photos/anipic.png'
-import AniPic2 from '../../assets/photos/AniPic2.png'
+import AniPic2 from '../../assets/photos/AniPic2.png';
 
 function Home() {
     return (
@@ -13,7 +12,6 @@ function Home() {
             </section>
 
         </div>
-
     )
 }
 
