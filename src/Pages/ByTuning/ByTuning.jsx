@@ -2,6 +2,7 @@ import './ByTuning.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import TuningPattern from '../../Components/TuningPattern/TuningPattern';
 import AniPic5 from '../../assets/photos/AniPic5.png';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ByTuning() {
     let tuningPatterns = transcriptions.map(
@@ -40,7 +41,7 @@ function ByTuning() {
     // console.log('oddTuningPatterns', oddTuningPatterns);
     return (
         <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c]'>
-            <img className='AniPic5 w-full' src={AniPic5} />
+            <LazyLoadImage className='AniPic5 w-full' src={AniPic5} />
             <h2 className='by-heading-text text-2xl md:text-10xl mt-5 mb-5 text-center'>by tuning</h2>
             <div className='md:hidden flex flex-row justify-around text-sm'>
                 <div id={oddTuningPatternComponents.tuning} className='flex-col text-center'>

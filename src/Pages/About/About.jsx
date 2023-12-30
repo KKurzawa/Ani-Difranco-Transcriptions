@@ -1,13 +1,14 @@
 import './About.css';
 import NatPic3 from '../../assets/photos/NatPic3.png'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function AboutMe() {
 
     return (
         <div className='bg-[#c2b39c]'>
             <div className='flex justify-center'>
-                <img id='NatPic3' src={NatPic3} />
+                <LazyLoadImage id='NatPic3' src={NatPic3} />
             </div>
             <div className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>

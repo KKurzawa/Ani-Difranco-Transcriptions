@@ -1,6 +1,7 @@
 import './TranscriptionsAz.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import AniPic4 from '../../assets/photos/AniPic4.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function TranscriptionsaAz() {
     console.log('transcriptions', transcriptions)
@@ -8,7 +9,7 @@ function TranscriptionsaAz() {
     console.log('sortedTranscriptions', sortedTranscriptions)
     return (
         <section className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c]'>
-            <img id='aniPic4' className='w-full' src={AniPic4} />
+            <LazyLoadImage id='aniPic4' className='w-full' src={AniPic4} />
             <h2 className='az-heading-text flex justify-center mt-5 mb-5'>transcriptions a-z</h2>
             <div className='flex flex-row justify-around mx-5 pb-10'>
                 <div className='flex flex-col items-center'>
