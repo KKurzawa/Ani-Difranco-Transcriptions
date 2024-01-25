@@ -1,4 +1,5 @@
 import './Navbar.css';
+import { Link, useLocation } from 'react-router-dom';
 
 const navlinks = [
     {
@@ -24,17 +25,25 @@ const navlinks = [
 ]
 
 function Navbar() {
+    const currentPage = useLocation().pathname;
     return (
         <>
-            <div className='flex justify-center'>
-                <div className='flex pb-2 md:pb-0 text-2xl md:text-3xl lg:text-4xl md:items-center md:ml-10 lg:ml-40'>
+            <header className='flex justify-center'>
+                <nav className='flex pb-2 md:pb-0 text-2xl md:text-3xl lg:text-4xl md:items-center md:ml-10 lg:ml-40'>
                     {navlinks.map((link, index) => index > 0 && (
-                        <a key={index} className='heading-text px-3 md:p-3 lg:p-5 text-center text-[#4F7942]' href={link.link}>
-                            {link.title}
-                        </a>
+                        <Link
+                            key={link.link}
+                            to={link.link}
+                            className={currentPage === link.link ? 'nav-link active' : 'nav-link'}
+                        >
+                            <nav key={index} className='heading-text px-3 md:p-3 lg:p-5 text-center text-[#4F7942]'>
+                                {link.title}
+                            </nav>
+                        </Link>
+
                     ))}
-                </div>
-            </div>
+                </nav>
+            </header>
         </>
     )
 }
