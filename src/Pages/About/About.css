@@ -1,3 +1,11 @@
+.about-navbar-text {
+    font-family: 'EB Garamond', serif;
+    color: #c2b39c;
+}
+
+.about-navbar-item:hover {
+    color: #c2b39cb6;
+}
 .about-header-text{
     font-family: 'EB Garamond', serif;
     padding-bottom: .5em;
@@ -26,6 +34,16 @@
     padding-bottom: .25em;
     font-size: 1.5em;
     color: #4F7942;;
+}
+
+.back-to-top {
+    font-family: 'EB Garamond', serif;
+    font-size: 2em;
+    color: #412720;
+}
+
+.back-to-top:hover {
+    color: #412720bf;
 }
 
 #NatPic3 {

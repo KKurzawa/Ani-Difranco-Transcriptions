@@ -10,7 +10,13 @@ function AboutMe() {
             <div className='flex justify-center'>
                 <LazyLoadImage id='NatPic3' src={NatPic3} />
             </div>
-            <div className='mt-10 pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
+            <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center'>
+                <a href='#introduction' className='about-navbar-item'>introduction</a>
+                <a href='#whatIsTab' className='about-navbar-item'>tab</a>
+                <a href='#tips' className='about-navbar-item'>tips </a>
+                <a href='#acknowledgements' className='about-navbar-item'>acknowledgements</a>
+            </nav>
+            <div className='pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
                 <h4 className='about-description-text'>
@@ -19,7 +25,7 @@ function AboutMe() {
                 <h4 className='about-description-text mb-10'>
                     being a completionist and enormous nerd at heart, i took it upon myself to decipher and transcribe each one of ani’s nearly 300 songs. armed with a cursory knowledge of her compositional style and an enormous fan-compiled database of bootleg recordings, i was able to determine what i consider to be as close to, if not exactly accurate transcriptions of ani’s guitar parts on her songs. over the years of live performance, many of these songs have changed– fuel began on the tenor guitar, and is now played in E standard on her baritone; swan dive’s high string has dropped from an E to a C— and this collection aims to present them all, in each iteration.
                 </h4>
-                <h2 className='about-header-text'>
+                <h2 id='whatIsTab' className='about-header-text'>
                     what is tab? what are transcriptions?
                 </h2>
 
@@ -45,7 +51,7 @@ function AboutMe() {
                 <div id='this-way' className='about-description-text mb-10'>
                     this way, the number 10 does not read as a possible 1 0, and can be easily identified by a single character.
                 </div>
-                <div className='about-header-text'>tips for playing ani</div>
+                <div id='tips' className='about-header-text'>tips for playing ani</div>
                 <div className='about-sub-header-text'>tuning notation</div>
                 <div className='about-description-text'>
                     again inspired by joni mitchell, i have adapted her system of noting tunings. rather than list each tuning by pitch, the tunings are instead listed by the fret below to which you would tune the string by ear. for example:
@@ -91,7 +97,7 @@ function AboutMe() {
                     the following is a list of symbols and markers which may be used to give further direction while playing these songs:
                 </div>
                 <DynamicsTable />
-                <div className='about-header-text'>
+                <div id='acknowledgements' className='about-header-text'>
                     acknowledgements
                 </div>
                 <div className='about-description-text mb-10'>
@@ -107,6 +113,9 @@ function AboutMe() {
                     this is a completely unauthorized fan-made publication. these transcriptions are the author's own work and represent my interpretation of the songs. you may only use these files for private study, scholarship, or research. copyrighted material contained in transcriptions is used in accordance with 'fair use'.
                 </div>
             </div>
+            <footer className=''>
+                <a className='back-to-top mx-7 md:mx-10' href='#'>back to top</a>
+            </footer>
         </div>
     )
 }
