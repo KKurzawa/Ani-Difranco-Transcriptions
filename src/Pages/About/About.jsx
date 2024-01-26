@@ -6,11 +6,11 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function AboutMe() {
 
     return (
-        <div className='bg-[#c2b39c] border-b-4 border-[#4F7942]'>
-            <div className='flex justify-center border-b-4 border-t-4 border-[#4F7942]'>
+        <div className='bg-[#c2b39c] border-b-[3px] border-[#7b6f5e]'>
+            <div className='flex justify-center border-b-[3px] border-t-2 border-[#7b6f5e]'>
                 <LazyLoadImage id='NatPic3' src={NatPic3} className='' />
             </div>
-            <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center border-b-4 border-[#4F7942]'>
+            <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center border-b-[3px] border-[#7b6f5e]'>
                 <a href='#introduction' className='about-navbar-item'>introduction</a>
                 <a href='#whatIsTab' className='about-navbar-item'>tab</a>
                 <a href='#tips' className='about-navbar-item'>tips </a>
