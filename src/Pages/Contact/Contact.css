@@ -9,9 +9,10 @@
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 5px;
-      border: solid 1px #1d110e;
+      border: solid 2px #4F7942;
       font-family: 'Nanum Gothic', sans-serif;
       color: #c2b39c;
+      outline: none;
     }
 
 .submit-button {
@@ -27,4 +28,9 @@
       margin-top: .25rem;
       margin-bottom: 2rem;
       font-family: 'Nanum Gothic', sans-serif;
+      border: solid 2px #4F7942;
+    }
+
+    .submit-button:hover {
+      background-color: #1d110eb3;
     }

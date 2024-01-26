@@ -6,17 +6,17 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function AboutMe() {
 
     return (
-        <div className='bg-[#c2b39c]'>
-            <div className='flex justify-center'>
-                <LazyLoadImage id='NatPic3' src={NatPic3} />
+        <div className='bg-[#c2b39c] border-b-4 border-[#4F7942]'>
+            <div className='flex justify-center border-b-4 border-t-4 border-[#4F7942]'>
+                <LazyLoadImage id='NatPic3' src={NatPic3} className='' />
             </div>
-            <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center'>
+            <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center border-b-4 border-[#4F7942]'>
                 <a href='#introduction' className='about-navbar-item'>introduction</a>
                 <a href='#whatIsTab' className='about-navbar-item'>tab</a>
                 <a href='#tips' className='about-navbar-item'>tips </a>
                 <a href='#acknowledgements' className='about-navbar-item'>acknowledgements</a>
             </nav>
-            <div className='pb-10 mx-7 md:mx-10 text-xl md:text-2xl'>
+            <div className='pb-5 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
                 <h4 className='about-description-text'>
@@ -113,8 +113,8 @@ function AboutMe() {
                     this is a completely unauthorized fan-made publication. these transcriptions are the author's own work and represent my interpretation of the songs. you may only use these files for private study, scholarship, or research. copyrighted material contained in transcriptions is used in accordance with 'fair use'.
                 </div>
             </div>
-            <footer className=''>
-                <a className='back-to-top mx-7 md:mx-10' href='#'>back to top</a>
+            <footer className='pb-5 md:pb-10'>
+                <a className='back-to-top text-2xl md:text-4xl mx-7 md:mx-10' href='#'>back to top</a>
             </footer>
         </div>
     )

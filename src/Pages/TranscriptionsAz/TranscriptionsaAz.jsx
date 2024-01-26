@@ -8,10 +8,12 @@ function TranscriptionsaAz() {
     const sortedTranscriptions = transcriptions.sort((function (a, b) { return a - b }));
     console.log('sortedTranscriptions', sortedTranscriptions)
     return (
-        <section className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c]'>
-            <LazyLoadImage id='aniPic4' className='w-full' src={AniPic4} />
+        <section className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c] border-b-4 border-t-4 border-[#4F7942]'>
+            <div className='border-b-4 border-[#4F7942]'>
+                <LazyLoadImage id='aniPic4' className='w-full' src={AniPic4} />
+            </div>
             <h2 className='az-heading-text flex justify-center mt-5 mb-5'>transcriptions a-z</h2>
-            <div className='flex flex-row justify-around mx-5 pb-10'>
+            <div className='flex flex-row justify-around mx-5 pb-5'>
                 <div className='flex flex-col items-center'>
                     {transcriptions.map((transcription, index) => index % 2 === 0 && (
                         <div key={transcription.id} className='pb-3'>
@@ -75,6 +77,9 @@ function TranscriptionsaAz() {
                     ))}
                 </div>
             </div>
+            <footer className='pb-5 md:pb-10'>
+                <a className='back-to-top text-2xl md:text-4xl flex justify-center mx-[5em] md:mx-[8em] lg:mx-[10em]' href='#'>back to top</a>
+            </footer>
         </section>
     )
 }
