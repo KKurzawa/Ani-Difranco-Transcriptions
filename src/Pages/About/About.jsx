@@ -6,17 +6,17 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function AboutMe() {
 
     return (
-        <div className='bg-[#c2b39c] border-b-[6px] border-[#a8957b]'>
-            <div className='flex justify-center border-b-[6px] border-t-[6px] border-[#a8957b]'>
+        <main className='bg-[#c2b39c] border-b-[6px] border-[#a8957b]'>
+            <section className='flex justify-center border-b-[6px] border-t-[6px] border-[#a8957b]'>
                 <LazyLoadImage id='NatPic3' src={NatPic3} className='' />
-            </div>
+            </section>
             <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center border-b-[6px] border-[#a8957b]'>
                 <a href='#introduction' className='about-navbar-item'>introduction</a>
                 <a href='#whatIsTab' className='about-navbar-item'>tab</a>
                 <a href='#tips' className='about-navbar-item'>tips </a>
                 <a href='#acknowledgements' className='about-navbar-item'>acknowledgements</a>
             </nav>
-            <div className='pb-5 mx-7 md:mx-10 text-xl md:text-2xl'>
+            <article className='pb-5 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
                 <h3 id='nat-name' className='about-description-text'>natalie siagkris-seymour</h3>
                 <h4 className='about-description-text'>
@@ -48,9 +48,9 @@ function AboutMe() {
                     <li>14th fret, E</li>
                     <li>15th fret, F</li>
                 </ul>
-                <div id='this-way' className='about-description-text mb-10'>
+                <h4 id='this-way' className='about-description-text mb-10'>
                     this way, the number 10 does not read as a possible 1 0, and can be easily identified by a single character.
-                </div>
+                </h4>
                 <div id='tips' className='about-header-text'>tips for playing ani</div>
                 <div className='about-sub-header-text'>tuning notation</div>
                 <div className='about-description-text'>
@@ -112,11 +112,11 @@ function AboutMe() {
                 <div className='about-description-text'>
                     this is a completely unauthorized fan-made publication. these transcriptions are the author's own work and represent my interpretation of the songs. you may only use these files for private study, scholarship, or research. copyrighted material contained in transcriptions is used in accordance with 'fair use'.
                 </div>
-            </div>
+            </article>
             <footer className='pb-5 md:pb-10'>
                 <a className='back-to-top text-2xl md:text-4xl mx-7 md:mx-10' href='#'>back to top</a>
             </footer>
-        </div>
+        </main>
     )
 }
 

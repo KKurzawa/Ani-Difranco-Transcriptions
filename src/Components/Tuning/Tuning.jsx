@@ -3,7 +3,7 @@ export default function Tuning({ myTuning, items }) {
 
     const songsComponents = items.map(
         (item) =>
-            <div key={item.name}>
+            <article key={item.name}>
                 <h2 className='by-song-title text-xl md:text-2xl'>{item.name}</h2>
                 <div className='-mt-1 md:-mt-3'>
                     {item.pdf === false ? (
@@ -22,12 +22,12 @@ export default function Tuning({ myTuning, items }) {
                         <a href={item.video} target="_blank" rel="noreferrer" className='video-text text-base flex-col'>video</a>
                     )}
                 </div>
-            </div>
+            </article>
     )
     return (
-        <div className=''>
+        <header className=''>
             <h2 className='tuning-subheading-text text-xl md:text-3xl'>tuning: {myTuning}</h2>
             <div className='flex flex-col'>{songsComponents}</div>
-        </div>
+        </header>
     )
 }
