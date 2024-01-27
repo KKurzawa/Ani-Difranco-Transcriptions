@@ -47,8 +47,8 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <div className='flex flex-col items-center md:mb-0 min-h-screen bg-[#c2b39c] border-b-8 border-[#a8957b]'>
-            <div className='border-t-8 border-b-8 md:border-8 border-[#a8957b]'>
+        <div className='flex flex-col items-center md:mb-0 min-h-screen bg-[#c2b39c] border-b-[6px] border-[#a8957b]'>
+            <div className='border-t-[6px] border-b-[6px] md:border-[6px] border-[#a8957b]'>
                 <LazyLoadImage id='NatPic' src={NatPic} />
             </div>
             <h2 className="heading-text text-[#4F7942] text-5xl md:text-6xl mt-5">contact me</h2>
