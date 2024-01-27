@@ -40,8 +40,8 @@ function ByTuning() {
     console.log('tuningPatternComponents', tuningPatternComponents);
     // console.log('oddTuningPatterns', oddTuningPatterns);
     return (
-        <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c] border-b-4 border-t-4 border-[#4F7942]'>
-            <div className='border-b-4 border-[#4F7942]'>
+        <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c] border-b-8 border-t-8 border-[#a8957b]'>
+            <div className='border-b-8 border-[#a8957b]'>
                 <LazyLoadImage className='AniPic5 w-full' src={AniPic5} />
             </div>
             <h2 className='by-heading-text text-2xl md:text-10xl mt-5 mb-5 text-center'>by tuning</h2>

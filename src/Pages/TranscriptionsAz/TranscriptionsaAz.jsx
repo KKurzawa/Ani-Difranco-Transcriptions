@@ -8,8 +8,8 @@ function TranscriptionsaAz() {
     const sortedTranscriptions = transcriptions.sort((function (a, b) { return a - b }));
     console.log('sortedTranscriptions', sortedTranscriptions)
     return (
-        <section className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c] border-b-4 border-t-4 border-[#4F7942]'>
-            <div className='border-b-4 border-[#4F7942]'>
+        <section className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c] border-b-[8px] border-t-[8px] border-[#a8957b]'>
+            <div className='border-b-[8px] border-[#a8957b]'>
                 <LazyLoadImage id='aniPic4' className='w-full' src={AniPic4} />
             </div>
             <h2 className='az-heading-text flex justify-center mt-5 mb-5'>transcriptions a-z</h2>

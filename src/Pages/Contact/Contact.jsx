@@ -47,8 +47,8 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <div className='flex flex-col items-center md:mb-0 min-h-screen bg-[#c2b39c] border-b-4 border-[#7b6f5e]'>
-            <div className='border-t-4 border-b-4 md:border-4 border-[#7b6f5e]'>
+        <div className='flex flex-col items-center md:mb-0 min-h-screen bg-[#c2b39c] border-b-8 border-[#a8957b]'>
+            <div className='border-t-8 border-b-8 md:border-8 border-[#a8957b]'>
                 <LazyLoadImage id='NatPic' src={NatPic} />
             </div>
             <h2 className="heading-text text-[#4F7942] text-5xl md:text-6xl mt-5">contact me</h2>
@@ -87,7 +87,7 @@ const Contact = () => {
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text text-black text-xl md:text-4xl mb-5">{errorMessage}</p>
+                    <p className="error-text text-[#1d110e] text-xl md:text-4xl mb-5">{errorMessage}</p>
                 </div>
             )}
         </div>

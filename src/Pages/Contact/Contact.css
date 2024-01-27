@@ -9,7 +9,7 @@
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 5px;
-      border: solid 2px #7b6f5e;
+      border: solid 2px #a8957b;
       font-family: 'Nanum Gothic', sans-serif;
       color: #c2b39c;
       outline: none;
@@ -28,7 +28,7 @@
       margin-top: .25rem;
       margin-bottom: 2rem;
       font-family: 'Nanum Gothic', sans-serif;
-      border: solid 2px #7b6f5e;
+      border: solid 2px #a8957b;
     }
 
     .submit-button:hover {
