@@ -38,33 +38,33 @@ function ByTuning() {
     console.log(oddTuningPatternComponents);
 
     console.log('tuningPatternComponents', tuningPatternComponents);
-    // console.log('oddTuningPatterns', oddTuningPatterns);
+
     return (
-        <div className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c] border-b-[6px] border-t-[6px] border-[#a8957b]'>
-            <div className='border-b-[6px] border-[#a8957b]'>
+        <main className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c] border-b-[6px] border-t-[6px] border-[#a8957b]'>
+            <section className='border-b-[6px] border-[#a8957b]'>
                 <LazyLoadImage className='AniPic5 w-full' src={AniPic5} />
-            </div>
+            </section>
             <h2 className='by-heading-text text-2xl md:text-10xl mt-5 mb-5 text-center'>by tuning</h2>
-            <div className='md:hidden flex flex-row justify-around text-sm -mb-5'>
-                <div id={oddTuningPatternComponents.tuning} className='flex-col text-center'>
+            <article className='md:hidden flex flex-row justify-around text-sm -mb-5'>
+                <section id={oddTuningPatternComponents.tuning} className='flex-col text-center'>
                     {oddTuningPatternComponents}
-                </div>
-                <div className='flex-col text-center'>
+                </section>
+                <section className='flex-col text-center'>
                     {evenTuningPatternComponents}
-                </div>
-            </div>
-            <div className='flex flex-row justify-around mb-10'>
-                <div id={oddTuningPatternComponents.tuning} className='hidden md:flex flex-col text-center'>
+                </section>
+            </article>
+            <article className='flex flex-row justify-around mb-10'>
+                <section id={oddTuningPatternComponents.tuning} className='hidden md:flex flex-col text-center'>
                     {oddTuningPatternComponents}
-                </div>
-                <div className='hidden md:flex flex-col text-center'>
+                </section>
+                <section className='hidden md:flex flex-col text-center'>
                     {evenTuningPatternComponents}
-                </div>
-            </div>
+                </section>
+            </article>
             <footer className='pb-5 md:pb-10'>
                 <a className='back-to-top text-2xl md:text-4xl flex justify-center mx-[5em] md:mx-[8em] lg:mx-[10em]' href='#'>back to top</a>
             </footer>
-        </div>
+        </main>
     )
 }
 

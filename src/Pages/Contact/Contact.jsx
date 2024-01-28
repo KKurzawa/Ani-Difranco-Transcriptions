@@ -47,10 +47,10 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <div className='flex flex-col items-center md:mb-0 min-h-screen bg-[#c2b39c] border-b-[6px] border-[#a8957b]'>
-            <div className='border-t-[6px] border-b-[6px] md:border-[6px] border-[#a8957b]'>
+        <main className='flex flex-col items-center md:mb-0 min-h-screen bg-[#c2b39c] border-b-[6px] border-[#a8957b]'>
+            <section className='border-t-[6px] border-b-[6px] md:border-[6px] border-[#a8957b]'>
                 <LazyLoadImage id='NatPic' src={NatPic} />
-            </div>
+            </section>
             <h2 className="heading-text text-[#4F7942] text-5xl md:text-6xl mt-5">contact me</h2>
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[50%] md:w-[40%]'>
                 <input
@@ -86,11 +86,11 @@ const Contact = () => {
                 <button className='submit-button' type='submit'>submit</button>
             </form>
             {errorMessage && (
-                <div>
+                <article>
                     <p className="error-text text-[#1d110e] text-xl md:text-4xl mb-5">{errorMessage}</p>
-                </div>
+                </article>
             )}
-        </div>
+        </main>
     )
 }
 
