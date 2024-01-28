@@ -9,7 +9,7 @@ export default function Tuning({ myTuning, items }) {
                     {item.pdf === false ? (
                         <a></a>
                     ) : (
-                        <a href={item.pdf} target="_blank" rel="noreferrer" className='pdf-text text-base text-center flex-col'>pdf</a>
+                        <a href={item.pdf} target="_blank" rel="noreferrer" className='pdf-text text-base text-center flex-col transition duration-500 hover:ease-in-out'>pdf</a>
                     )}
                     {item.pdf !== false && item.video !== false ? (
                         <span className='span-text text-sm pr-2 pl-2'>|</span>
@@ -19,7 +19,7 @@ export default function Tuning({ myTuning, items }) {
                     {item.video === false ? (
                         <a></a>
                     ) : (
-                        <a href={item.video} target="_blank" rel="noreferrer" className='video-text text-base flex-col'>video</a>
+                        <a href={item.video} target="_blank" rel="noreferrer" className='video-text text-base flex-col transition duration-500 hover:ease-in-out'>video</a>
                     )}
                 </div>
             </article>

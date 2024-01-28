@@ -10,8 +10,8 @@ function Header() {
                     to="/"
                     className=''
                 >
-                    <h1 className='heading-text text-6xl mt-3 md:mt-5 text-[#4F7942]'>ani difranco</h1>
-                    <h2 className='heading-text text-4xl mb-1 md:mb-5 text-[#4F7942]' >transcriptions</h2>
+                    <h1 className='heading-text text-6xl mt-3 md:mt-5 text-[#4F7942] transition duration-500 hover:ease-in-out'>ani difranco</h1>
+                    <h2 className='heading-text text-4xl mb-1 md:mb-5 text-[#4F7942] transition duration-500 hover:ease-in-out' >transcriptions</h2>
                 </Link>
             </header>
             <Navbar />

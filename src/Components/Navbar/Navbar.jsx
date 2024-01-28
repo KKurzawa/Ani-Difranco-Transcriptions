@@ -35,7 +35,7 @@ function Navbar() {
                         to={link.link}
                         className={currentPage === link.link ? 'nav-link active' : 'nav-link'}
                     >
-                        <nav key={index} className='heading-text px-3 md:p-3 lg:p-5 text-center text-[#4F7942]'>
+                        <nav key={index} className='heading-text px-3 md:p-3 lg:p-5 text-center text-[#4F7942] transition duration-500 hover:ease-in-out'>
                             {link.title}
                         </nav>
                     </Link>

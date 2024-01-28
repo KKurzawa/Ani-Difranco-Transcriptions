@@ -11,10 +11,10 @@ function AboutMe() {
                 <LazyLoadImage id='NatPic3' src={NatPic3} className='' />
             </section>
             <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center border-b-[6px] border-[#a8957b]'>
-                <a href='#introduction' className='about-navbar-item'>introduction</a>
-                <a href='#whatIsTab' className='about-navbar-item'>tab</a>
-                <a href='#tips' className='about-navbar-item'>tips </a>
-                <a href='#acknowledgements' className='about-navbar-item'>acknowledgements</a>
+                <a href='#introduction' className='about-navbar-item transition duration-500 hover:ease-in-out'>introduction</a>
+                <a href='#whatIsTab' className='about-navbar-item transition duration-500 hover:ease-in-out'>tab</a>
+                <a href='#tips' className='about-navbar-item transition duration-500 hover:ease-in-out'>tips </a>
+                <a href='#acknowledgements' className='about-navbar-item transition duration-500 hover:ease-in-out'>acknowledgements</a>
             </nav>
             <article className='pb-5 mx-7 md:mx-10 text-xl md:text-2xl'>
                 <h2 id='introduction' className='about-header-text'>introduction</h2>
@@ -114,7 +114,7 @@ function AboutMe() {
                 </h4>
             </article>
             <footer className='pb-5 md:pb-10'>
-                <a className='back-to-top text-2xl md:text-4xl mx-7 md:mx-10' href='#'>back to top</a>
+                <a className='back-to-top text-2xl md:text-4xl mx-7 md:mx-10 transition duration-500 hover:ease-in-out' href='#'>back to top</a>
             </footer>
         </main>
     )
