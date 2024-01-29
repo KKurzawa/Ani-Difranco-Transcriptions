@@ -1,7 +1,7 @@
 import './ByTuning.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
 import TuningPattern from '../../Components/TuningPattern/TuningPattern';
-import AniPic5 from '../../assets/photos/AniPic5.png';
+import AniPic8 from '../../assets/photos/AniPic8.png';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ByTuning() {
@@ -42,7 +42,7 @@ function ByTuning() {
     return (
         <main className='flex flex-col justify-center text-xl md:text-2xl bg-[#c2b39c] border-b-[6px] border-t-[6px] border-[#a8957b]'>
             <section className='border-b-[6px] border-[#a8957b]'>
-                <LazyLoadImage className='AniPic5 w-full' src={AniPic5} />
+                <LazyLoadImage className='AniPic8 w-full' src={AniPic8} />
             </section>
             <h2 className='by-heading-text text-2xl md:text-10xl mt-5 mb-5 text-center'>by tuning</h2>
             <article className='md:hidden flex flex-row justify-around text-sm -mb-5'>

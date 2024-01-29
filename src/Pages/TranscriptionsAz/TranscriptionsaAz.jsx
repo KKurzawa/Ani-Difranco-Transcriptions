@@ -1,6 +1,6 @@
 import './TranscriptionsAz.css';
 import { transcriptions } from '../../Utils/TranscriptionsTunings';
-import AniPic4 from '../../assets/photos/AniPic4.png'
+import AniPic7 from '../../assets/photos/AniPic7.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function TranscriptionsaAz() {
@@ -10,7 +10,7 @@ function TranscriptionsaAz() {
     return (
         <main className='transcriptions-az flex flex-col text-xl md:text-2xl bg-[#c2b39c] border-b-[6px] border-t-[6px] border-[#a8957b]'>
             <section className='border-b-[6px] border-[#a8957b]'>
-                <LazyLoadImage id='aniPic4' className='w-full' src={AniPic4} />
+                <LazyLoadImage id='aniPic7' className='w-full' src={AniPic7} />
             </section>
             <h2 className='az-heading-text flex justify-center mt-5 mb-5'>transcriptions a-z</h2>
             <article className='flex flex-row justify-around mx-5 pb-5'>

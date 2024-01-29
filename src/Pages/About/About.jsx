@@ -1,5 +1,5 @@
 import './About.css';
-import NatPic3 from '../../assets/photos/NatPic3.png'
+import NatPic4 from '../../assets/photos/NatPic4.png'
 import DynamicsTable from '../../Components/DynamicsTable/DynamicsTable';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -8,7 +8,7 @@ function AboutMe() {
     return (
         <main className='bg-[#c2b39c] border-b-[6px] border-[#a8957b]'>
             <section className='flex justify-center border-b-[6px] border-t-[6px] border-[#a8957b]'>
-                <LazyLoadImage id='NatPic3' src={NatPic3} className='' />
+                <LazyLoadImage id='NatPic4' src={NatPic4} className='' />
             </section>
             <nav className='flex justify-evenly about-navbar-text  text-xl md:text-4xl lg:text-5xl bg-[#1d110e] px-5 py-5 file:align-content-center border-b-[6px] border-[#a8957b]'>
                 <a href='#introduction' className='about-navbar-item transition duration-500 hover:ease-in-out'>introduction</a>
