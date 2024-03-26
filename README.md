@@ -4,7 +4,7 @@
 ## Description
 A website to display downloadable Ani Difranco transcriptions built with React, styled with Tailwind, and deployed with Vercel.
 
-![screenshot](https://github.com/KKurzawa/kris-dev-portfolio/blob/main/public/Screenshot5.png)
+![screenshot](https://github.com/KKurzawa/Ani-Difranco-Transcriptions/blob/main/public/AniScreenshot.png)
 
 [Github Repository](https://github.com/KKurzawa/Ani-Difranco-Transcriptions)
 
